@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F0EFEF;
+}
+
+header {
+  width: 100%;
+  justify-content: space-between;
+}
+header .menu {
+  margin: 1rem;
+}
+header .logo {
+  margin: 1rem;
+}
+header .logo img {
+  border-radius: 10px;
+  filter: hue-rotate(45deg) drop-shadow(2px 4px 6px black);
+}
+
+main {
+  background-image: url("../img/backgroundIndex.png");
+  background-size: cover;
+}
+main .heroSection {
+  color: #444444;
+  font-family: "League Spartan", sans-serif;
+}
+main .heroSection .heroSectionTitleContainer {
+  margin-top: 150px;
+}
+main .heroSection .heroSectionTitleContainer h1 {
+  font-size: 3.5rem;
+}
+main .heroSection .heroSectionTitleContainer .brandsList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  list-style: none;
+  background-color: rgba(68, 68, 68, 0.15);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+}
+main .heroSection .heroSectionTitleContainer .brandsList li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .heroSection .heroSectionDescriptionContainer > p {
+  margin-top: 1rem;
+  border-radius: 20px;
+  padding: 1rem;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(59deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 51%, rgba(255, 255, 255, 0) 100%);
+  font-size: 1.6rem;
+}
+main .heroSection .heroSectionDescriptionContainer .testimonialContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .heroSection .heroSectionDescriptionContainer .testimonialContainer img {
+  margin: auto;
+  display: block;
+}
+main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion-container {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem auto;
+  background-color: rgba(217, 217, 217, 0.4392156863);
+  border-radius: 6px;
+  padding: 0.8rem 0.4rem;
+}
+@media (min-width: 330px) {
+  main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion-container {
+    padding: 1rem;
+  }
+}
+main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion-container a {
+  display: block;
+  text-decoration: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.3);
+  border: 2px solid white;
+  font-weight: bold;
+  text-align: center;
+  width: fit-content;
+}
+main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion-container a:first-child {
+  background-color: white;
+  color: black;
+}
+main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion-container a:last-child {
+  background-color: rgba(64, 64, 64, 0.7019607843);
+  color: white;
+}
+main .heroSection .heroSectionDescriptionContainer .registrarseAnchor {
+  margin: auto;
+  display: block;
+  text-decoration: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.3);
+  border: 2px solid white;
+  font-weight: bold;
+  text-align: center;
+  width: fit-content;
+  background-color: #C49C74;
+  color: black;
+}
+
+.comienza-a-buscar-section {
+  background-color: #DDDDDD;
+  position: relative;
+  top: -10px;
+  padding-bottom: 1.5rem;
+}
+.comienza-a-buscar-section h2 {
+  font-family: "Playfair Display SC", serif;
+  font-weight: bold;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.9215686275);
+}
+.comienza-a-buscar-section form {
+  padding-top: 0.5rem;
+  font-family: "Outfit", sans-serif;
+}
+.comienza-a-buscar-section form input,
+.comienza-a-buscar-section form select {
+  border: none;
+  padding: 0.5rem;
+  padding-left: 2.5rem;
+  border-radius: 6px;
+  margin: 1rem auto;
+  display: block;
+  color: #444444;
+  background-color: white;
+}
+@media (min-width: 576px) {
+  .comienza-a-buscar-section form input,
+  .comienza-a-buscar-section form select {
+    width: 320px;
+  }
+}
+.comienza-a-buscar-section form input::placeholder {
+  color: #909090;
+}
+.comienza-a-buscar-section form input:first-child {
+  background-image: url("../img/building-community.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 0.5rem;
+}
+.comienza-a-buscar-section form #checkIn {
+  background-image: url("../img/calendar-up.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 0.5rem;
+}
+.comienza-a-buscar-section form #checkOut {
+  background-image: url("../img/calendar-down.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 0.5rem;
+}
+.comienza-a-buscar-section form select {
+  background-image: url("../img/chevron-down.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 0.5rem;
+  background-position: right 0.5rem center;
+  color: black;
+  padding: 0.5rem 1rem;
+  padding-right: 2.5rem;
+  appearance: none;
+}
+.comienza-a-buscar-section form button {
+  font-weight: 600;
+  border-radius: 6px;
+  background-color: #C49C74;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: auto;
+  display: block;
+}
+
+.encuentra-tu-hotel-section {
+  padding: 1rem;
+}
+.encuentra-tu-hotel-section h2 {
+  font-family: "Playfair Display SC", serif;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.9215686275);
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+.encuentra-tu-hotel-section .carousel-img {
+  width: 406px;
+  height: 304.5px;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */
