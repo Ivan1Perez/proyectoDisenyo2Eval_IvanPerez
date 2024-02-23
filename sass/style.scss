@@ -77,6 +77,12 @@ $screen-xl-min: 1200px;
     background-position-x: 0.5rem;
 }
 
+@mixin flex-center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 * {
     margin: 0;
@@ -131,9 +137,7 @@ main {
                 padding: 0.5rem 1rem;
 
                 li {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    @include flex-center();
                 }
             }
         }
@@ -230,10 +234,10 @@ main {
             @include sm {
                 width: 320px;
             }
-        }
 
-        input::placeholder {
-            color: #909090;
+            &::placeholder {
+                color: #909090;
+            }
         }
 
         input:first-child {
@@ -248,32 +252,83 @@ main {
             @include inputDates('../img/calendar-down.png');
         }
 
-        select {
-            @include inputDates('../img/chevron-down.png');
-            background-position: right 0.5rem center;
-            color: black;
-            padding: 0.5rem 1rem;
-            padding-right: 2.5rem;
-            appearance: none;
+        .customDropdown {
+            width: fit-content;
+            background-color: white;
+            margin: 1rem auto;
+
+            &:focus {
+                color: black;
+            }
+
+            &:not(:active) {
+                color: black;
+            }
+        }
+
+        .customDropdown-menu {
+
+            li {
+                @include flex-center();
+                justify-content: space-between;
+                gap: 1rem;
+                padding: 1rem;
+                user-select: none;
+
+                p {
+                    margin: 0;
+                }
+
+                div {
+                    @include flex-center();
+                    max-width: 91px;
+                    min-width: 91px;
+                    gap: 0.5rem;
+                    border: 1px solid gray;
+                    border-radius: 6px;
+                    padding: 0.5rem 1rem;
+
+                    label:first-child, label:last-child {
+                        cursor: pointer;
+                    }
+
+                    label:nth-child(2) {
+                        text-align: center;
+                        min-width: 27px;
+                    }
+                }
+
+                &:nth-child(2), &:last-child{
+
+                    label:first-child {
+                        cursor: not-allowed;
+                        color: #bdbdbd;
+                    }
+                }
+            }
         }
 
         button {
-            font-weight: 600;
             border-radius: 6px;
-            background-color: #C49C74;
+            color: black;
             border: none;
             padding: 0.5rem 1rem;
             margin: auto;
             display: block;
         }
+
+        button[type="submit"] {
+            font-weight: 600;
+            background-color: #C49C74;
+        }
     }
 }
 
-.encuentra-tu-hotel-section{
+.encuentra-tu-hotel-section {
     padding: 1rem;
 
     h2 {
-        font-family: "Playfair Display SC", serif;   
+        font-family: "Playfair Display SC", serif;
         font-weight: bold;
         color: #000000eb;
         padding-top: 0.5rem;

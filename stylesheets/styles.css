@@ -156,7 +156,8 @@ main .heroSection .heroSectionDescriptionContainer .registrarseAnchor {
     width: 320px;
   }
 }
-.comienza-a-buscar-section form input::placeholder {
+.comienza-a-buscar-section form input::placeholder,
+.comienza-a-buscar-section form select::placeholder {
   color: #909090;
 }
 .comienza-a-buscar-section form input:first-child {
@@ -177,25 +178,62 @@ main .heroSection .heroSectionDescriptionContainer .registrarseAnchor {
   background-position-y: center;
   background-position-x: 0.5rem;
 }
-.comienza-a-buscar-section form select {
-  background-image: url("../img/chevron-down.png");
-  background-repeat: no-repeat;
-  background-position-y: center;
-  background-position-x: 0.5rem;
-  background-position: right 0.5rem center;
+.comienza-a-buscar-section form .customDropdown {
+  width: fit-content;
+  background-color: white;
+  margin: 1rem auto;
+}
+.comienza-a-buscar-section form .customDropdown:focus {
   color: black;
+}
+.comienza-a-buscar-section form .customDropdown:not(:active) {
+  color: black;
+}
+.comienza-a-buscar-section form .customDropdown-menu li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  user-select: none;
+}
+.comienza-a-buscar-section form .customDropdown-menu li p {
+  margin: 0;
+}
+.comienza-a-buscar-section form .customDropdown-menu li div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 91px;
+  min-width: 91px;
+  gap: 0.5rem;
+  border: 1px solid gray;
+  border-radius: 6px;
   padding: 0.5rem 1rem;
-  padding-right: 2.5rem;
-  appearance: none;
+}
+.comienza-a-buscar-section form .customDropdown-menu li div label:first-child, .comienza-a-buscar-section form .customDropdown-menu li div label:last-child {
+  cursor: pointer;
+}
+.comienza-a-buscar-section form .customDropdown-menu li div label:nth-child(2) {
+  text-align: center;
+  min-width: 27px;
+}
+.comienza-a-buscar-section form .customDropdown-menu li:nth-child(2) label:first-child, .comienza-a-buscar-section form .customDropdown-menu li:last-child label:first-child {
+  cursor: not-allowed;
+  color: #bdbdbd;
 }
 .comienza-a-buscar-section form button {
-  font-weight: 600;
   border-radius: 6px;
-  background-color: #C49C74;
+  color: black;
   border: none;
   padding: 0.5rem 1rem;
   margin: auto;
   display: block;
+}
+.comienza-a-buscar-section form button[type=submit] {
+  font-weight: 600;
+  background-color: #C49C74;
 }
 
 .encuentra-tu-hotel-section {
