@@ -16,7 +16,7 @@ flatpickr("#checkOut", {});
 const handleOccupancy = (actionElement, numberElement, numCounterElement, elementToMakeClicable) => {
     const numberElementToInt = parseInt(numberElement.innerHTML);
     const minAllowedNumber = numCounterElement.id === 'numNinyosCounter' ? 0 : 1;
-    
+
     if (actionElement.innerHTML === '-' && numberElementToInt > minAllowedNumber) {
         numberElement.innerHTML = numberElementToInt - 1;
 
@@ -35,13 +35,11 @@ const handleOccupancy = (actionElement, numberElement, numCounterElement, elemen
         }
     }
 
-    if (elementToMakeClicable.style.cursor === 'not-allowed') {
-        elementToMakeClicable.style.cursor = 'pointer';
-        elementToMakeClicable.style.color = 'black';
-    }
+    elementToMakeClicable.style.cursor = 'pointer';
+    elementToMakeClicable.style.color = 'black';
 
     numCounterElement.innerHTML = numberElement.innerHTML;
-    
+
 }
 
 const numAdultos = document.getElementById('numAdultos');
@@ -87,3 +85,15 @@ function handleItemClick(event) {
     // Evitar que el dropdown se cierre al clicar en un elemento
     event.stopPropagation();
 }
+
+//Asignación imágenes carousel
+// const divsCarousel = document.querySelectorAll('.custom-carousel-content');
+
+// const imgsCarousel = [
+//     'url(../img/hotelPlaya_carousel.jpg)',
+//     'url(../img/hotelNieveConEstrellas.png)'
+// ];
+
+// for (let i = 0; i < divsCarousel.length; i++) {
+//     divsCarousel[i].style.backgroundImage = imgsCarousel[i] ;
+// }

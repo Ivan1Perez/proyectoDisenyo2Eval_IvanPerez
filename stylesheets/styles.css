@@ -132,8 +132,11 @@ main .heroSection .heroSectionDescriptionContainer .registrarseAnchor {
 .comienza-a-buscar-section h2 {
   font-family: "Playfair Display SC", serif;
   font-weight: bold;
-  text-align: center;
   color: rgba(0, 0, 0, 0.9215686275);
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  padding: unset;
 }
 .comienza-a-buscar-section form {
   padding-top: 0.5rem;
@@ -212,7 +215,8 @@ main .heroSection .heroSectionDescriptionContainer .registrarseAnchor {
   border-radius: 6px;
   padding: 0.5rem 1rem;
 }
-.comienza-a-buscar-section form .customDropdown-menu li div label:first-child, .comienza-a-buscar-section form .customDropdown-menu li div label:last-child {
+.comienza-a-buscar-section form .customDropdown-menu li div label:first-child,
+.comienza-a-buscar-section form .customDropdown-menu li div label:last-child {
   cursor: pointer;
 }
 .comienza-a-buscar-section form .customDropdown-menu li div label:nth-child(2) {
@@ -246,10 +250,167 @@ main .heroSection .heroSectionDescriptionContainer .registrarseAnchor {
   padding-top: 0.5rem;
   padding-bottom: 1rem;
 }
-.encuentra-tu-hotel-section .carousel-img {
-  width: 406px;
+.encuentra-tu-hotel-section .custom-carousel-inner .custom-carousel-content {
   height: 304.5px;
   border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+}
+.encuentra-tu-hotel-section .custom-carousel-inner .custom-carousel-content img {
+  width: 30%;
+  position: relative;
+  top: 5%;
+  left: 5%;
+  border-radius: 6px;
+}
+.encuentra-tu-hotel-section .custom-carousel-inner #carousel_playa {
+  background-image: url(../img/hotelPlaya_carousel.jpg);
+}
+.encuentra-tu-hotel-section .custom-carousel-inner #carousel_nieve {
+  background-image: url(../img/hotelNieve_carousel.png);
+}
+.encuentra-tu-hotel-section .custom-carousel-inner #carousel_restuarante {
+  background-image: url(../img/hotelRestaurante_carousel.png);
+}
+.encuentra-tu-hotel-section h3 {
+  font-family: "Playfair Display SC", serif;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.encuentra-tu-hotel-section p {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+}
+.encuentra-tu-hotel-section p span {
+  color: #AE1E1E;
+}
+
+.beneficios-section {
+  padding: 1rem;
+  background-color: white;
+  font-family: "League Spartan", sans-serif;
+  color: black;
+}
+.beneficios-section h2 {
+  font-family: "Playfair Display SC", serif;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.9215686275);
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+.beneficios-section .experiencia-servicio-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.beneficios-section .experiencia-servicio-container h4 {
+  font-weight: 600;
+}
+
+.exploreMoreBtn {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7019607843);
+  width: fit-content;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  border: 1px solid white;
+  outline: 3px solid rgba(0, 0, 0, 0.7019607843);
+  border-radius: 9999px;
+  margin: 1rem auto;
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.2vw 0;
+  padding-left: 3vw;
+  transition: background-color 0.3s, transform 0.3s, color 0.3s;
+}
+.exploreMoreBtn p {
+  margin: 0;
+}
+.exploreMoreBtn:hover {
+  background-color: white;
+  transform: scale(1.05);
+  color: black;
+  border-color: black;
+}
+.exploreMoreBtn:hover p, .exploreMoreBtn:hover svg {
+  transition: color 0.3s;
+  color: black;
+}
+.exploreMoreBtn:hover svg path {
+  fill: black;
+}
+.exploreMoreBtn .svg-arrow-extraSmall {
+  width: 6vw;
+  height: 6.5vw;
+  margin-right: 1vw;
+}
+
+hr {
+  margin: 0;
+}
+
+.reserva-section {
+  background-color: white;
+  padding: 1rem;
+}
+.reserva-section p {
+  margin: 0;
+}
+.reserva-section .reserva-container {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid black;
+}
+.reserva-section .reserva-container h2 {
+  text-align: center;
+}
+.reserva-section .reservar-explorar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.reserva-section .reservar-explorar button {
+  border: 2px solid #4D4D4D;
+  padding: 0.6rem 1.3rem;
+  color: white;
+  background-color: black;
+}
+.reserva-section .reservar-explorar button:last-child {
+  background-color: white;
+  color: black;
+}
+
+footer .logo-media-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .logo-media-footer .logo {
+  margin: 1rem;
+}
+footer .logo-media-footer .logo img {
+  border-radius: 10px;
+  filter: hue-rotate(45deg) drop-shadow(2px 4px 6px black);
+}
+footer .logo-media-footer .social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 0.5rem;
+}
+footer .logo-media-footer .social-media li {
+  width: 41.5px;
+  height: 41.5px;
+}
+footer .logo-media-footer .social-media li img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
