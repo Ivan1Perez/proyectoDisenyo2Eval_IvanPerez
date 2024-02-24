@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+p, h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -32,16 +36,32 @@ header .menu:active, header .menu:hover, header .menu:focus-visible {
   background-color: transparent !important;
   border: none;
 }
+@media (min-width: 1200px) {
+  header .menu img {
+    width: 5vw;
+  }
+}
 header .logo {
   margin: 1rem;
 }
 header .logo img {
+  width: 100px;
   border-radius: 10px;
   filter: hue-rotate(45deg) drop-shadow(2px 4px 6px black);
 }
 
+@media (min-width: 1600px) {
+  aside #offcanvasExample {
+    width: 20vw;
+  }
+}
 aside #offcanvasExampleLabel {
   font-size: 2rem;
+}
+@media (min-width: 1200px) {
+  aside #offcanvasExampleLabel {
+    font-size: 3vw;
+  }
 }
 aside .navBar-links {
   font-family: "League Spartan", sans-serif;
@@ -57,12 +77,43 @@ aside .navBar-links a {
 aside .navBar-links a {
   border-bottom: 1px solid #b4b4b4;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 40px;
+}
+@media (min-width: 1200px) {
+  aside .navBar-links a {
+    font-size: 1.8vw;
+  }
+}
+@media (min-width: 1600px) {
+  aside .navBar-links a {
+    height: 3vw;
+  }
+}
+aside .navBar-links a img {
+  height: 80%;
+  min-height: 40px;
+}
+aside .navBar-links a img:last-child {
+  margin-left: auto;
 }
 aside .direccion-contacto h5 {
   font-size: 1.2rem;
 }
+@media (min-width: 1200px) {
+  aside .direccion-contacto h5 {
+    font-size: 1.4vw;
+  }
+}
 aside .direccion-contacto p {
   font-size: 0.8rem;
+}
+@media (min-width: 1200px) {
+  aside .direccion-contacto p {
+    font-size: 1vw;
+  }
 }
 
 main {
@@ -94,7 +145,8 @@ main .heroSection .heroSectionTitleContainer h1 {
 }
 @media (min-width: 1200px) {
   main .heroSection .heroSectionTitleContainer h1 {
-    font-size: 5rem;
+    font-size: 7vw;
+    width: unset;
   }
 }
 main .heroSection .heroSectionTitleContainer .brandsList {
@@ -111,6 +163,11 @@ main .heroSection .heroSectionTitleContainer .brandsList {
     display: flex;
     justify-content: space-around;
     margin: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  main .heroSection .heroSectionTitleContainer .brandsList img {
+    width: 9vw;
   }
 }
 main .heroSection .heroSectionTitleContainer .brandsList li {
@@ -142,6 +199,8 @@ main .heroSection .heroSectionDescriptionContainer > p {
     float: unset;
     margin: 1rem 0;
     margin-left: auto;
+    width: unset;
+    font-size: 2.6vw;
   }
 }
 main .heroSection .heroSectionDescriptionContainer .testimonialContainer {
@@ -171,6 +230,14 @@ main .heroSection .heroSectionDescriptionContainer .testimonialContainer #testim
     width: 300px;
   }
 }
+@media (min-width: 1200px) {
+  main .heroSection .heroSectionDescriptionContainer .testimonialContainer #testimonialImg {
+    width: 22vw;
+  }
+}
+main .heroSection .heroSectionDescriptionContainer .testimonialContainer img:last-child {
+  width: 18vw;
+}
 @media (min-width: 576px) {
   main .heroSection .heroSectionDescriptionContainer .testimonialContainer {
     flex-direction: unset;
@@ -189,6 +256,11 @@ main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion
 @media (min-width: 992px) {
   main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion-registrarse-container {
     width: unset;
+  }
+}
+@media (min-width: 1200px) {
+  main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion-registrarse-container {
+    font-size: 1.2vw;
   }
 }
 main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion-registrarse-container .explorarHoteles-inicioSesion-container {
@@ -221,6 +293,7 @@ main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion
   font-weight: bold;
   text-align: center;
   width: fit-content;
+  width: -moz-fit-content;
 }
 main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion-registrarse-container .explorarHoteles-inicioSesion-container a:first-child {
   background-color: white;
@@ -241,6 +314,7 @@ main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion
   font-weight: bold;
   text-align: center;
   width: fit-content;
+  width: -moz-fit-content;
   background-color: #C49C74;
   color: black;
 }
@@ -265,6 +339,11 @@ main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion
     font-size: 2.2rem;
   }
 }
+@media (min-width: 1200px) {
+  .comienza-a-buscar-section h2 {
+    font-size: 4vw;
+  }
+}
 .comienza-a-buscar-section form {
   padding-top: 0.5rem;
   font-family: "Outfit", sans-serif;
@@ -285,6 +364,11 @@ main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion
 @media (min-width: 1200px) {
   .comienza-a-buscar-section form {
     display: flex;
+    font-size: 1.4vw;
+  }
+  .comienza-a-buscar-section form #checkIn,
+  .comienza-a-buscar-section form #checkOut {
+    width: 12vw;
   }
 }
 .comienza-a-buscar-section form input,
@@ -304,6 +388,13 @@ main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion
     width: 320px;
   }
 }
+@media (min-width: 1200px) {
+  .comienza-a-buscar-section form input,
+  .comienza-a-buscar-section form select {
+    background-size: 2vw;
+    padding-left: 3vw;
+  }
+}
 .comienza-a-buscar-section form input::placeholder,
 .comienza-a-buscar-section form select::placeholder {
   color: #909090;
@@ -317,6 +408,11 @@ main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion
 @media (min-width: 768px) {
   .comienza-a-buscar-section form input:first-child {
     width: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  .comienza-a-buscar-section form input:first-child {
+    width: 28vw;
   }
 }
 .comienza-a-buscar-section form #checkIn {
@@ -367,6 +463,12 @@ main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion
   padding: 1rem;
   user-select: none;
 }
+@media (min-width: 1200px) {
+  .comienza-a-buscar-section form .customDropdown-menu li {
+    font-size: 1.5vw;
+    gap: 2vw;
+  }
+}
 .comienza-a-buscar-section form .customDropdown-menu li p {
   margin: 0;
 }
@@ -401,6 +503,11 @@ main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion
   margin: auto;
   display: block;
 }
+@media (min-width: 1200px) {
+  .comienza-a-buscar-section form button {
+    font-size: 1.4vw;
+  }
+}
 .comienza-a-buscar-section form button[type=submit] {
   font-weight: 600;
   background-color: #C49C74;
@@ -431,6 +538,11 @@ main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion
 @media (min-width: 768px) {
   .encuentra-tu-hotel-section h2 {
     font-size: 2.2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .encuentra-tu-hotel-section h2 {
+    font-size: 4vw;
   }
 }
 .encuentra-tu-hotel-section .custom-carousel-inner .custom-carousel-content {
@@ -482,6 +594,13 @@ main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion
     gap: 1rem;
   }
 }
+@media (min-width: 992px) {
+  .beneficios-section {
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    column-gap: 2rem;
+  }
+}
 .beneficios-section .beneficios-section-info h2 {
   font-family: "Playfair Display SC", serif;
   font-weight: bold;
@@ -494,9 +613,19 @@ main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion
     font-size: 2.2rem;
   }
 }
+@media (min-width: 1200px) {
+  .beneficios-section .beneficios-section-info h2 {
+    font-size: 4vw;
+  }
+}
 @media (min-width: 992px) {
   .beneficios-section .beneficios-section-info {
     font-size: 1.2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .beneficios-section .beneficios-section-info p {
+    font-size: 1.4vw;
   }
 }
 .beneficios-section .beneficios-section-info .experiencia-servicio-container {
@@ -512,6 +641,11 @@ main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion
 @media (min-width: 992px) {
   .beneficios-section .beneficios-section-info .experiencia-servicio-container h4 {
     font-size: 1.8rem;
+  }
+}
+@media (min-width: 1200px) {
+  .beneficios-section .beneficios-section-info .experiencia-servicio-container h4 {
+    font-size: 1.8vw;
   }
 }
 .beneficios-section .beneficios-section-img {
@@ -575,6 +709,12 @@ main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion
     margin-right: unset;
   }
 }
+@media (min-width: 1200px) {
+  .exploreMoreBtn .svg-arrow-extraSmall {
+    width: 3.4vw;
+    height: 3vw;
+  }
+}
 
 hr {
   margin: 0;
@@ -586,6 +726,7 @@ hr {
 }
 .reserva-section p {
   margin: 0;
+  text-align: center;
 }
 @media (min-width: 992px) {
   .reserva-section p {
@@ -605,6 +746,16 @@ hr {
     font-size: 2.2rem;
   }
 }
+@media (min-width: 1200px) {
+  .reserva-section .reserva-container h2 {
+    font-size: 3.7vw;
+  }
+}
+@media (min-width: 1200px) {
+  .reserva-section .reserva-container p {
+    font-size: 1.5vw;
+  }
+}
 .reserva-section .reservar-explorar {
   display: flex;
   align-items: center;
@@ -617,6 +768,11 @@ hr {
   color: white;
   background-color: black;
   font-weight: 600;
+}
+@media (min-width: 1200px) {
+  .reserva-section .reservar-explorar button {
+    font-size: 1.5vw;
+  }
 }
 
 footer {
@@ -635,11 +791,17 @@ footer .logo-media-footer .logo {
   margin: 1rem;
 }
 footer .logo-media-footer .logo img {
+  width: 100px;
   border-radius: 10px;
   filter: hue-rotate(45deg) drop-shadow(2px 4px 6px black);
 }
 footer .logo-media-footer .logo {
   margin: 0;
+}
+@media (min-width: 1200px) {
+  footer .logo-media-footer .logo img {
+    width: 10vw;
+  }
 }
 footer .logo-media-footer .social-media {
   display: grid;
@@ -669,6 +831,12 @@ footer .logo-media-footer .social-media li img {
 footer .logo-media-footer .social-media li:last-child {
   grid-column: 1/3;
 }
+@media (min-width: 1200px) {
+  footer .logo-media-footer .social-media li {
+    width: 5vw;
+    height: 5vw;
+  }
+}
 @media (min-width: 576px) {
   footer .logo-media-footer .social-media {
     row-gap: 1rem;
@@ -684,6 +852,12 @@ footer .footer-info-links-container {
     row-gap: 1rem;
   }
 }
+@media (min-width: 1200px) {
+  footer .footer-info-links-container {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
 footer .footer-info-links-container .direccion-contacto {
   display: flex;
   flex-direction: column;
@@ -694,14 +868,31 @@ footer .footer-info-links-container .direccion-contacto {
 footer .footer-info-links-container .direccion-contacto h5 {
   margin: 0;
 }
+@media (min-width: 1200px) {
+  footer .footer-info-links-container .direccion-contacto h5 {
+    font-size: 2.2vw;
+  }
+}
 footer .footer-info-links-container .direccion-contacto p {
   margin: 0;
+}
+@media (min-width: 1200px) {
+  footer .footer-info-links-container .direccion-contacto p {
+    font-size: 1.4vw;
+  }
 }
 @media (min-width: 576px) {
   footer .footer-info-links-container .direccion-contacto {
     flex-direction: unset;
     align-items: center;
     justify-content: space-around;
+  }
+}
+@media (min-width: 1200px) {
+  footer .footer-info-links-container .direccion-contacto {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
   }
 }
 footer .footer-info-links-container .footer-links {
@@ -722,6 +913,18 @@ footer .footer-info-links-container .footer-links a {
     text-align: center;
   }
 }
+@media (min-width: 1200px) {
+  footer .footer-info-links-container .footer-links {
+    font-size: 1.4vw;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .copy {
+    font-size: 1.4vw;
+  }
+}
 
 .handles svg path {
   stroke: #e2e2e2 !important;
@@ -740,6 +943,11 @@ footer .footer-info-links-container .footer-links a {
   max-width: 1300px;
   margin: auto;
 }
+@media (min-width: 1200px) {
+  .PostSlide {
+    max-width: unset;
+  }
+}
 
 .PostSlide .innerContainer .slider {
   display: flex;
@@ -747,12 +955,22 @@ footer .footer-info-links-container .footer-links a {
   overflow-x: hidden;
   margin: auto;
 }
+@media (min-width: 1200px) {
+  .PostSlide .innerContainer .slider {
+    width: unset;
+  }
+}
 
 .PostSlide .innerContainer .slider .slide {
   display: block;
   background-size: cover !important;
   background-position: center center !important;
   min-width: 280px;
+}
+@media (min-width: 1200px) {
+  .PostSlide .innerContainer .slider .slide {
+    min-width: 23vw;
+  }
 }
 
 .PostSlide .innerContainer .slider {
@@ -819,6 +1037,11 @@ footer .footer-info-links-container .footer-links a {
     margin: auto;
   }
 }
+@media (min-width: 1280px) and (min-width: 1200px) {
+  .PostSlide .innerContainer .slider {
+    width: unset !important;
+  }
+}
 @media (max-width: 1280px) {
   .PostSlide .innerContainer .handles {
     width: calc(100% + 30px) !important;
@@ -881,12 +1104,25 @@ footer .footer-info-links-container .footer-links a {
   background-position: center;
   background-size: cover;
 }
+@media (min-width: 1200px) {
+  .innerContainer .custom-carousel-content {
+    min-height: 24vw;
+  }
+}
 .innerContainer .custom-carousel-content img {
   width: 30%;
   position: relative;
   top: 5%;
   left: 5%;
   border-radius: 6px;
+}
+@media (min-width: 1200px) {
+  .innerContainer h3 {
+    font-size: 1.4vw;
+  }
+  .innerContainer p {
+    font-size: 1.2vw;
+  }
 }
 .innerContainer #carousel_playa {
   background-image: url(../img/hotelPlaya_carousel.jpg);

@@ -2,6 +2,10 @@ const inputDestino = document.getElementsByName('destino')[0];
 
 const handleWindowResize = () => {
     window.innerWidth < 576 || window.innerWidth > 768 ? inputDestino.placeholder = 'Introduzca destino' : inputDestino.placeholder = 'Introduzca destino o nombre del hotel';
+
+    if (window.innerWidth > 1200) {
+        inputDestino.placeholder = 'Introduzca destino o nombre del hotel';
+    }
 }
 
 handleWindowResize();
