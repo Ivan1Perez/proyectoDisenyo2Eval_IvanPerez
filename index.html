@@ -22,13 +22,43 @@
 
 <body>
     <header class="d-flex position-absolute">
-        <div class="menu">
+        <button class="btn btn-primary menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample">
             <img src="img/Menu.png" alt="menu">
-        </div>
-        <div class="logo">
+        </button>
+        <a href="#" class="logo">
             <img src="img/Logo.jpg" alt="logo">
-        </div>
+        </a>
     </header>
+
+    <aside>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menú</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column justify-content-between gap-5">
+                <div class="navBar-links">
+                    <a href="#">Inicio</a>
+                    <a href="#">Mis Reservas</a>
+                    <a href="#">Idioma</a>
+                    <a href="#">Perfil</a>
+                    <a href="#">Log in</a>
+                </div>
+                <div class="direccion-contacto">
+                    <div>
+                        <h5>Dirección:</h5>
+                        <p>Nivel 1, Calle Sueca 12, Madrid 28079</p>
+                    </div>
+                    <div>
+                        <h5>Contacto:</h5>
+                        <p>964 40 60 11 - info@hmhotels.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
 
     <main class="pb-5">
         <div class="heroSection container-fluid row m-0 p-0">
@@ -127,7 +157,7 @@
 
         <h2>ENCUENTRA TU HOTEL</h2>
 
-        <div id="carouselExample" class="carousel slide">
+        <!-- <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner custom-carousel-inner">
                 <div class="carousel-item active">
                     <div class="custom-carousel-content" id="carousel_playa">
@@ -159,6 +189,67 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
+        </div> -->
+
+        <div class="PostSlide">
+
+            <div class="innerContainer active">
+                <div class="slider custom-carousel-inner">
+                    <div class="slide">
+                        <div class="custom-carousel-content" id="carousel_playa">
+                            <img src="img/hotel_stars.png" alt="hotel_stars">
+                        </div>
+                        <h3>1 HOTEL SOUTH BEACH</h3>
+                        <p><span>220€</span>/noche</p>
+                    </div>
+                    <div class="slide">
+                        <div class="custom-carousel-content" id="carousel_nieve">
+                            <img src="img/hotel_stars.png" alt="hotel_stars">
+                        </div>
+                        <h3>HOTEL SIERRA NEVADA</h3>
+                        <p><span>245€</span>/noche</p>
+                    </div>
+                    <div class="slide">
+                        <div class="custom-carousel-content" id="carousel_restuarante">
+                            <img src="img/hotel_stars.png" alt="hotel_stars">
+                        </div>
+                        <h3>HOTEL PALACE</h3>
+                        <p><span>235€</span>/noche</p>
+                    </div>
+                    <div class="slide">
+                        <div class="custom-carousel-content" id="carousel_room">
+                            <img src="img/hotel_stars.png" alt="hotel_stars">
+                        </div>
+                        <h3>1 HOTEL SOUTH BEACH</h3>
+                        <p><span>220€</span>/noche</p>
+                    </div>
+                    <div class="slide">
+                        <div class="custom-carousel-content" id="carousel_water">
+                            <img src="img/hotel_stars.png" alt="hotel_stars">
+                        </div>
+                        <h3>1 HOTEL SOUTH BEACH</h3>
+                        <p><span>220€</span>/noche</p>
+                    </div>
+                    <div class="slide">
+                        <div class="custom-carousel-content" id="carousel_suite">
+                            <img src="img/hotel_stars.png" alt="hotel_stars">
+                        </div>
+                        <h3>1 HOTEL SOUTH BEACH</h3>
+                        <p><span>220€</span>/noche</p>
+                    </div>
+                </div>
+
+                <div class="handles">
+                    <span class="prev">
+                        <img src="img/circle-arrow-left.png" alt="">
+                    </span>
+                    <span class="next">
+                        <img src="img/circle-arrow-right.png" alt="">
+                    </span>
+                </div>
+                <div class="dots">
+                </div>
+            </div>
         </div>
 
     </section>
@@ -187,8 +278,11 @@
 
             <div class="exploreMoreBtn" onclick="location.href = 'productos.php';">
                 <p>Explorar</p>
-                <svg class="svg-arrow-extraSmall" width="5vw" height="4.5vw" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M28 4.66669L28.756 4.67835C34.8757 4.87674 40.6722 7.47263 44.8953 11.9061C49.1183 16.3396 51.4295 22.2554 51.3303 28.3775C51.2311 34.4996 48.7294 40.3374 44.365 44.6317C40.0005 48.926 34.1229 51.3328 28 51.3328C21.8771 51.3328 15.9995 48.926 11.6351 44.6317C7.27057 40.3374 4.76894 34.4996 4.66974 28.3775C4.57053 22.2554 6.88171 16.3396 11.1048 11.9061C15.3278 7.47263 21.1243 4.87674 27.244 4.67835L28 4.66669ZM29.4303 16.8234C28.9614 16.4607 28.3719 16.2902 27.7818 16.3464C27.1916 16.4026 26.645 16.6814 26.2529 17.126C25.8608 17.5707 25.6527 18.1479 25.6708 18.7405C25.6889 19.333 25.9319 19.8965 26.3503 20.3164L31.696 25.6667H18.6667L18.3937 25.683C17.8031 25.7533 17.2617 26.0464 16.88 26.5024C16.4982 26.9585 16.3051 27.5431 16.3399 28.1368C16.3748 28.7305 16.635 29.2884 17.0675 29.6967C17.4999 30.105 18.072 30.3327 18.6667 30.3334H31.696L26.3503 35.6837L26.1567 35.903C25.794 36.372 25.6235 36.9614 25.6797 37.5516C25.736 38.1417 26.0147 38.6884 26.4594 39.0804C26.904 39.4725 27.4812 39.6806 28.0738 39.6626C28.6663 39.6445 29.2298 39.4015 29.6497 38.983L38.983 29.6497L39.1533 29.4584L39.3027 29.2507L39.4473 28.987L39.55 28.7304L39.62 28.469L39.6597 28.175L39.6667 28L39.6503 27.7247L39.5827 27.3794L39.501 27.1344L39.375 26.8707L39.2093 26.6117C39.1404 26.5191 39.0648 26.4318 38.983 26.3504L29.6497 17.017L29.4303 16.8234Z" fill="white" />
+                <svg class="svg-arrow-extraSmall" width="5vw" height="4.5vw" viewBox="0 0 56 56" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M28 4.66669L28.756 4.67835C34.8757 4.87674 40.6722 7.47263 44.8953 11.9061C49.1183 16.3396 51.4295 22.2554 51.3303 28.3775C51.2311 34.4996 48.7294 40.3374 44.365 44.6317C40.0005 48.926 34.1229 51.3328 28 51.3328C21.8771 51.3328 15.9995 48.926 11.6351 44.6317C7.27057 40.3374 4.76894 34.4996 4.66974 28.3775C4.57053 22.2554 6.88171 16.3396 11.1048 11.9061C15.3278 7.47263 21.1243 4.87674 27.244 4.67835L28 4.66669ZM29.4303 16.8234C28.9614 16.4607 28.3719 16.2902 27.7818 16.3464C27.1916 16.4026 26.645 16.6814 26.2529 17.126C25.8608 17.5707 25.6527 18.1479 25.6708 18.7405C25.6889 19.333 25.9319 19.8965 26.3503 20.3164L31.696 25.6667H18.6667L18.3937 25.683C17.8031 25.7533 17.2617 26.0464 16.88 26.5024C16.4982 26.9585 16.3051 27.5431 16.3399 28.1368C16.3748 28.7305 16.635 29.2884 17.0675 29.6967C17.4999 30.105 18.072 30.3327 18.6667 30.3334H31.696L26.3503 35.6837L26.1567 35.903C25.794 36.372 25.6235 36.9614 25.6797 37.5516C25.736 38.1417 26.0147 38.6884 26.4594 39.0804C26.904 39.4725 27.4812 39.6806 28.0738 39.6626C28.6663 39.6445 29.2298 39.4015 29.6497 38.983L38.983 29.6497L39.1533 29.4584L39.3027 29.2507L39.4473 28.987L39.55 28.7304L39.62 28.469L39.6597 28.175L39.6667 28L39.6503 27.7247L39.5827 27.3794L39.501 27.1344L39.375 26.8707L39.2093 26.6117C39.1404 26.5191 39.0648 26.4318 38.983 26.3504L29.6497 17.017L29.4303 16.8234Z"
+                        fill="white" />
                 </svg>
             </div>
         </div>
@@ -196,7 +290,7 @@
     </section>
 
     <hr>
-    
+
     <section class="reserva-section">
 
         <div class="reserva-container">
@@ -204,30 +298,59 @@
             <h2>¡Reserva tu estadía ahora mismo!</h2>
 
             <p>Descubre nuestras increíbles ofertas y disfruta de una estancia inolvidable.</p>
-            
+
         </div>
 
         <div class="reservar-explorar">
-            <button>Reservar</button>
-            <button>Explorar</button>
+            <button>Reservar Hotel</button>
         </div>
 
     </section>
 
     <footer>
+        <div></div>
         <div class="logo-media-footer">
-            <div class="logo">
+            <a href="#" class="logo">
                 <img src="img/Logo.jpg" alt="logo">
-            </div>
+            </a>
             <ul class="social-media">
-               <li><img src="img/facebook.png" alt=""></li> 
-               <li><img src="img/instagram.png" alt=""></li> 
-               <li></li> 
-               <li></li> 
-               <li></li> 
+                <li><img src="img/facebook.png" alt="facebook"></li>
+                <li><img src="img/instagram.png" alt="instagram"></li>
+                <li><img src="img/twitter_x.png" alt="twitter_x"></li>
+                <li><img src="img/linkedin.png" alt="linkedin"></li>
+                <li><img src="img/youtube.png" alt="youtube"></li>
             </ul>
         </div>
+
+        <div class="footer-info-links-container">
+            <div class="direccion-contacto">
+                <div>
+                    <h5>Dirección:</h5>
+                    <p>Nivel 1, Calle Sueca 12, Madrid 28079</p>
+                </div>
+                <div>
+                    <h5>Contacto:</h5>
+                    <p>964 40 60 11 - info@hmhotels.com</p>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <a href="#">Ayuda</a>
+                <a href="#">Ajustes de privacidad</a>
+                <a href="#">Log in</a>
+                <a href="#">Política de cookies</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Términos de servicio</a>
+                <a href="#">Detalles de la compañía</a>
+                <a href="#">Explorar</a>
+                <a href="#">Compañía</a>
+                <a href="#">Socios</a>
+                <a href="#">Trabaja con nosotros</a>
+            </div>
+        </div>
     </footer>
+
+    <p class="m-0 pb-4 text-center">&copy; HMHotels Ltd 2002 - 2024</p>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
