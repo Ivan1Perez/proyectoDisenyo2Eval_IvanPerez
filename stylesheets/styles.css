@@ -4,7 +4,12 @@
   box-sizing: border-box;
 }
 
-p, h1, h2, h3, h4, h5 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 0;
 }
 
@@ -557,15 +562,6 @@ main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion
   top: 5%;
   left: 5%;
   border-radius: 6px;
-}
-.encuentra-tu-hotel-section .custom-carousel-inner #carousel_playa {
-  background-image: url(../img/hotelPlaya_carousel.jpg);
-}
-.encuentra-tu-hotel-section .custom-carousel-inner #carousel_nieve {
-  background-image: url(../img/hotelNieve_carousel.png);
-}
-.encuentra-tu-hotel-section .custom-carousel-inner #carousel_restuarante {
-  background-image: url(../img/hotelRestaurante_carousel.png);
 }
 .encuentra-tu-hotel-section h3 {
   font-family: "Playfair Display SC", serif;
@@ -1124,23 +1120,29 @@ footer .footer-info-links-container .footer-links a {
     font-size: 1.2vw;
   }
 }
-.innerContainer #carousel_playa {
-  background-image: url(../img/hotelPlaya_carousel.jpg);
+
+.slide:nth-child(1) .custom-carousel-content {
+  background-image: url("../img/hotelPlaya_carousel.jpg");
 }
-.innerContainer #carousel_nieve {
-  background-image: url(../img/hotelNieve_carousel.png);
+
+.slide:nth-child(2) .custom-carousel-content {
+  background-image: url("../img/hotelNieve_carousel.png");
 }
-.innerContainer #carousel_restuarante {
-  background-image: url(../img/hotelRestaurante_carousel.png);
+
+.slide:nth-child(3) .custom-carousel-content {
+  background-image: url("../img/hotelRestaurante_carousel.png");
 }
-.innerContainer #carousel_room {
-  background-image: url(../img/room_carousel.jpeg);
+
+.slide:nth-child(4) .custom-carousel-content {
+  background-image: url("../img/room_carousel.jpeg");
 }
-.innerContainer #carousel_water {
-  background-image: url(../img/water_carousel.jpg);
+
+.slide:nth-child(5) .custom-carousel-content {
+  background-image: url("../img/water_carousel.jpg");
 }
-.innerContainer #carousel_suite {
-  background-image: url(../img/carousel_suite.jpeg);
+
+.slide:nth-child(6) .custom-carousel-content {
+  background-image: url("../img/carousel_suite.jpeg");
 }
 
 /*# sourceMappingURL=styles.css.map */

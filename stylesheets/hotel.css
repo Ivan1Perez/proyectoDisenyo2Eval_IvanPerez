@@ -1,9 +1,4 @@
-body {
-  background: url(../img/background-hotelPlaya.png) no-repeat fixed;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -569,15 +564,6 @@ main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion
   left: 5%;
   border-radius: 6px;
 }
-.encuentra-tu-hotel-section .custom-carousel-inner #carousel_playa {
-  background-image: url(../img/hotelPlaya_carousel.jpg);
-}
-.encuentra-tu-hotel-section .custom-carousel-inner #carousel_nieve {
-  background-image: url(../img/hotelNieve_carousel.png);
-}
-.encuentra-tu-hotel-section .custom-carousel-inner #carousel_restuarante {
-  background-image: url(../img/hotelRestaurante_carousel.png);
-}
 .encuentra-tu-hotel-section h3 {
   font-family: "Playfair Display SC", serif;
   font-size: 1rem;
@@ -1135,35 +1121,43 @@ footer .footer-info-links-container .footer-links a {
     font-size: 1.2vw;
   }
 }
-.innerContainer #carousel_playa {
-  background-image: url(../img/hotelPlaya_carousel.jpg);
-}
-.innerContainer #carousel_nieve {
-  background-image: url(../img/hotelNieve_carousel.png);
-}
-.innerContainer #carousel_restuarante {
-  background-image: url(../img/hotelRestaurante_carousel.png);
-}
-.innerContainer #carousel_room {
-  background-image: url(../img/room_carousel.jpeg);
-}
-.innerContainer #carousel_water {
-  background-image: url(../img/water_carousel.jpg);
-}
-.innerContainer #carousel_suite {
-  background-image: url(../img/carousel_suite.jpeg);
+
+.slide:nth-child(1) .custom-carousel-content {
+  background-image: url("../img/hotelPlaya_carousel.jpg");
 }
 
-header {
-  justify-content: unset;
+.slide:nth-child(2) .custom-carousel-content {
+  background-image: url("../img/hotelNieve_carousel.png");
 }
+
+.slide:nth-child(3) .custom-carousel-content {
+  background-image: url("../img/hotelRestaurante_carousel.png");
+}
+
+.slide:nth-child(4) .custom-carousel-content {
+  background-image: url("../img/room_carousel.jpeg");
+}
+
+.slide:nth-child(5) .custom-carousel-content {
+  background-image: url("../img/water_carousel.jpg");
+}
+
+.slide:nth-child(6) .custom-carousel-content {
+  background-image: url("../img/carousel_suite.jpeg");
+}
+
+body {
+  background: url(../img/background-hotelPlaya.png) no-repeat fixed;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
 header .menu img {
   filter: hue-rotate(45deg) drop-shadow(2px 4px 6px black);
 }
 
 main {
   background-image: none;
-  margin: 0 8rem;
 }
 main .top-navBar {
   padding-top: 1rem;
@@ -1182,7 +1176,7 @@ main .top-navBar .volver-a-inicio-link {
   text-align: center;
   width: fit-content;
   width: -moz-fit-content;
-  display: flex;
+  display: none;
   align-items: center;
   gap: 1rem;
   background-color: white;
@@ -1190,6 +1184,7 @@ main .top-navBar .volver-a-inicio-link {
   color: #444444;
 }
 main .top-navBar div {
+  display: none;
   position: absolute;
   right: 0;
   top: 0;
@@ -1211,7 +1206,67 @@ main .top-navBar div .iniciar-sesion-link {
   color: white;
   background-color: rgba(64, 64, 64, 0.7450980392);
 }
+main .opciones-interes-select {
+  position: absolute;
+  top: 10rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .opciones-interes-select select {
+  appearance: none;
+  outline: 10px red;
+  border: 0;
+  border-radius: 6px;
+  box-shadow: none;
+  flex: 1;
+  padding: 0 1em;
+  color: #5A5A5A;
+  font-weight: bold;
+  background-color: #D9D9D9;
+  background-image: none;
+  cursor: pointer;
+  margin: 0 1rem;
+}
+main .opciones-interes-select select option {
+  background-image: url(../img/building-carousel.svg);
+  font-weight: 600;
+}
+main .opciones-interes-select select option div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+main .opciones-interes-select select::-ms-expand {
+  display: none;
+}
+main .opciones-interes-select .select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  border-radius: 0.25em;
+  overflow: hidden;
+  border-radius: 6px;
+}
+main .opciones-interes-select .select::after {
+  content: "▼";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  padding-top: 0.7rem;
+  background-color: #D9D9D9;
+  transition: 0.25s all ease;
+  pointer-events: none;
+  margin-right: 1rem;
+  border-radius: 6px;
+}
+main .opciones-interes-select .select:hover::after {
+  color: gray;
+}
 main .opciones-interes {
+  display: none;
   align-items: center;
   justify-content: space-around;
   background-color: #D9D9D9;
@@ -1231,6 +1286,9 @@ main .hotelTitle-fotos-section {
   background-color: #D9D9D9;
   padding: 1rem;
   border-radius: 6px;
+  border-end-end-radius: 40px;
+  border-end-start-radius: 40px;
+  margin-top: 12rem;
 }
 main .hotelTitle-fotos-section .hotelTitle {
   display: flex;
@@ -1240,12 +1298,11 @@ main .hotelTitle-fotos-section .hotelTitle {
   color: white;
   font-family: "Playfair Display SC", serif;
   padding: 1rem;
-  border-top-left-radius: 9999px;
-  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 70px;
   width: fit-content;
   width: -moz-fit-content;
   margin: auto;
-  padding: 1rem 5rem;
 }
 main .hotelTitle-fotos-section .hotelTitle h1 {
   text-align: center;
@@ -1435,6 +1492,158 @@ main .hotelTitle-fotos-section form button[type=submit] {
   main .hotelTitle-fotos-section form button[type=submit] {
     left: unset;
   }
+}
+main .hotelTitle-fotos-section #checkIn_hotel {
+  background-image: url(../img/calendar-up.png);
+}
+main .hotelTitle-fotos-section #checkOut_hotel {
+  background-image: url(../img/calendar-down.png);
+  background-repeat: no-repeat;
+  background-position: 0.5rem center;
+}
+main .hotelTitle-fotos-section .custom-carousel-inner .custom-carousel-content {
+  height: 304.5px;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+}
+main .hotelTitle-fotos-section .custom-carousel-inner .custom-carousel-content img {
+  width: 30%;
+  position: relative;
+  top: 5%;
+  left: 5%;
+  border-radius: 6px;
+}
+main .hotelTitle-fotos-section .PostSlide {
+  margin: 2rem auto;
+  margin-top: 3rem;
+}
+main .descripcion-hotel-section {
+  margin: 1rem;
+  padding-bottom: 2rem;
+  border-radius: 60px;
+}
+main .descripcion-hotel-section h2 {
+  font-family: "Playfair Display SC", serif;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.9215686275);
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  main .descripcion-hotel-section h2 {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 1200px) {
+  main .descripcion-hotel-section h2 {
+    font-size: 4vw;
+  }
+}
+main .mapa-experiencia-usuario-section {
+  background-color: #D9D9D9;
+  margin-top: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .mapa-experiencia-usuario-section iframe {
+  width: 100%;
+}
+main .mapa-experiencia-usuario-section .experiencias-usuarios {
+  border-radius: 10px;
+  background-color: #ABC1D8;
+  text-align: center;
+  color: #121212;
+  text-decoration: underline;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main .mapa-experiencia-usuario-section .experiencias-usuarios h3 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+main .mapa-experiencia-usuario-section .experiencias-usuarios div p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+main .mapa-experiencia-usuario-section .experiencias-usuarios div div {
+  background-color: #D9D9D9;
+  width: fit-content;
+  margin: auto;
+  border-radius: 9999px;
+  width: -moz-fit-content;
+  padding: 0.5rem 3rem;
+}
+main .mapa-experiencia-usuario-section .experiencias-usuarios div div img {
+  width: 100px;
+}
+main .servicios-populares-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  font-weight: bold;
+  background-color: #D9D9D9;
+  padding: 1rem;
+}
+main .servicios-populares-section > div {
+  border: 3px solid;
+  padding: 1rem;
+}
+main .servicios-populares-section > div h2 {
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+main .servicios-populares-section > div div {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+footer {
+  margin: 0;
+  background-color: #F0EFEF;
+}
+footer div {
+  padding: 1rem;
+  background-color: #DDE5E1;
+}
+footer div .logo-media-footer {
+  gap: 2rem;
+}
+footer div .footer-info-links-container {
+  padding: 0;
+}
+footer div .footer-info-links-container .direccion-contacto {
+  margin: 0;
+}
+
+.slide:nth-child(1) .custom-carousel-content {
+  background-image: url("../img/hotelPlaya_carousel_1.png");
+}
+
+.slide:nth-child(2) .custom-carousel-content {
+  background-image: url("../img/hotelPlaya_carousel.jpg");
+}
+
+.slide:nth-child(3) .custom-carousel-content {
+  background-image: url("../img/carouselPlaya3.png");
+}
+
+.slide:nth-child(4) .custom-carousel-content {
+  background-image: url("../img/carouselPlaya4.jpeg");
+}
+
+.slide:nth-child(5) .custom-carousel-content {
+  background-image: url("../img/carouselPlaya5.jpeg");
+}
+
+.slide:nth-child(6) .custom-carousel-content {
+  background-image: url("../img/carouselPlaya6.jpeg");
 }
 
 /*# sourceMappingURL=hotel.css.map */

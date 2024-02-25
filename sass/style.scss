@@ -13,6 +13,15 @@ h5 {
     margin: 0;
 }
 
+$carouselPhotos : (
+    '../img/hotelPlaya_carousel.jpg',
+    '../img/hotelNieve_carousel.png',
+    '../img/hotelRestaurante_carousel.png',
+    '../img/room_carousel.jpeg',
+    '../img/water_carousel.jpg',
+    '../img/carousel_suite.jpeg'
+);
+
 $letterColorHeroSection : #444444;
 
 // Small tablets and large smartphones (landscape view)
@@ -309,6 +318,26 @@ $screen-xl-min: 1200px;
         }
     }
     @content;
+}
+
+@mixin customCarouselInner() {
+    .custom-carousel-inner {
+
+        .custom-carousel-content {
+            height: 304.5px;
+            border-radius: 10px;
+            background-position: center;
+            background-size: cover;
+
+            img {
+                width: 30%;
+                position: relative;
+                top: 5%;
+                left: 5%;
+                border-radius: 6px;
+            }
+        }
+    }
 }
 
 
@@ -633,35 +662,7 @@ main {
         @include h2_titulo_section();
     }
 
-    .custom-carousel-inner {
-
-        .custom-carousel-content {
-            height: 304.5px;
-            border-radius: 10px;
-            background-position: center;
-            background-size: cover;
-
-            img {
-                width: 30%;
-                position: relative;
-                top: 5%;
-                left: 5%;
-                border-radius: 6px;
-            }
-        }
-
-        #carousel_playa {
-            background-image: url(../img/hotelPlaya_carousel.jpg);
-        }
-
-        #carousel_nieve {
-            background-image: url(../img/hotelNieve_carousel.png);
-        }
-
-        #carousel_restuarante {
-            background-image: url(../img/hotelRestaurante_carousel.png);
-        }
-    }
+    @include customCarouselInner();
 
     h3 {
         font-family: "Playfair Display SC", serif;
@@ -1199,6 +1200,7 @@ footer {
 }
 
 .innerContainer {
+
     .custom-carousel-content {
         height: 304.5px;
         border-radius: 10px;
@@ -1227,28 +1229,13 @@ footer {
             font-size: 1.2vw;
         }
     }
+}
 
-    #carousel_playa {
-        background-image: url(../img/hotelPlaya_carousel.jpg);
-    }
-
-    #carousel_nieve {
-        background-image: url(../img/hotelNieve_carousel.png);
-    }
-
-    #carousel_restuarante {
-        background-image: url(../img/hotelRestaurante_carousel.png);
-    }
-
-    #carousel_room {
-        background-image: url(../img/room_carousel.jpeg);
-    }
-
-    #carousel_water {
-        background-image: url(../img/water_carousel.jpg);
-    }
-
-    #carousel_suite {
-        background-image: url(../img/carousel_suite.jpeg);
+@for $i from 1 through 6 {
+    $imagePath: nth($carouselPhotos, $i);
+    // @debug "Imagen para #{$i}: #{$imagePath}";
+    
+    .slide:nth-child(#{$i}) .custom-carousel-content {
+        background-image: url($imagePath);
     }
 }

@@ -86,7 +86,29 @@
             </div>
         </div>
 
-        <nav class="opciones-interes d-flex">
+        <div class="opciones-interes-select">
+            <div class="select">
+                <select>
+                    <option value="1">
+                        <p>Alojamiento</p>
+                    </option>
+                    <option value="2">
+                        <p>Vuelos</p>
+                    </option>
+                    <option value="3">
+                        <p>Vuelo + Hotel</p>
+                    </option>
+                    <option value="4">
+                        <p>Alquiler de coches</p>
+                    </option>
+                    <option value="5">
+                        <p>Atracciones turísticas</p>
+                    </option>
+                </select>
+            </div>
+        </div>
+
+        <nav class="opciones-interes">
             <div>
                 <img src="img/building-community.svg" alt="building-community">
                 <p>Alojamiento</p>
@@ -109,58 +131,254 @@
             </div>
         </nav>
 
-        <section class="hotelTitle-fotos-section">
+        <div class="bg-white rounded-top">
+            <section class="hotelTitle-fotos-section">
 
-            <div class="hotelTitle">
-                <h1>1 Hotel South Beach</h1>
-                <img src="img/starsHotel_view.png" alt="stars">
-            </div>
-
-            <form action="">
-                <input type="text" id="checkIn" placeholder="Check in">
-                <input type="text" id="checkOut" placeholder="Check out">
-    
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle customDropdown" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        <span id="numAdultos">2</span> Adultos &nbsp;·&nbsp; <span id="numNinyos">0</span> Niños
-                        &nbsp;·&nbsp; <span id="numHabitaciones">1</span> Habitación
-                    </button>
-                    <ul class="dropdown-menu customDropdown-menu">
-                        <li onclick="handleItemClick(event)">
-                            <p>Adultos</p>
-                            <div>
-                                <label id="substract-numAdultosCounter">-</label><label
-                                    id="numAdultosCounter">2</label><label id="plus-numAdultosCounter">+</label>
-                            </div>
-                        </li>
-                        <li onclick="handleItemClick(event)">
-                            <p>Niños</p>
-                            <div>
-                                <label id="substract-numNinyosCounter">-</label><label id="numNinyosCounter">0</label><label
-                                    id="plus-numNinyosCounter">+</label>
-                            </div>
-                        </li>
-                        <li onclick="handleItemClick(event)">
-                            <p>Habitaciones</p>
-                            <div>
-                                <label id="substract-numHabitacionesCounter">-</label><label
-                                    id="numHabitacionesCounter">1</label><label id="plus-numHabitacionesCounter">+</label>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="hotelTitle">
+                    <h1>1 Hotel South Beach</h1>
+                    <img src="img/starsHotel_view.png" alt="stars">
                 </div>
-    
-                <button type="submit">Buscar hotel</button>
-            </form>
 
+                <form action="">
+                    <input type="text" id="checkIn_hotel" placeholder="Check in">
+                    <input type="text" id="checkOut_hotel" placeholder="Check out">
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle customDropdown" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span id="numAdultos">2</span> Adultos &nbsp;·&nbsp; <span id="numNinyos">0</span> Niños
+                            &nbsp;·&nbsp; <span id="numHabitaciones">1</span> Habitación
+                        </button>
+                        <ul class="dropdown-menu customDropdown-menu">
+                            <li onclick="handleItemClick(event)">
+                                <p>Adultos</p>
+                                <div>
+                                    <label id="substract-numAdultosCounter">-</label><label
+                                        id="numAdultosCounter">2</label><label id="plus-numAdultosCounter">+</label>
+                                </div>
+                            </li>
+                            <li onclick="handleItemClick(event)">
+                                <p>Niños</p>
+                                <div>
+                                    <label id="substract-numNinyosCounter">-</label><label
+                                        id="numNinyosCounter">0</label><label id="plus-numNinyosCounter">+</label>
+                                </div>
+                            </li>
+                            <li onclick="handleItemClick(event)">
+                                <p>Habitaciones</p>
+                                <div>
+                                    <label id="substract-numHabitacionesCounter">-</label><label
+                                        id="numHabitacionesCounter">1</label><label
+                                        id="plus-numHabitacionesCounter">+</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button type="submit">Buscar hotel</button>
+                </form>
+
+
+                <div class="PostSlide">
+
+                    <div class="innerContainer active">
+                        <div class="slider custom-carousel-inner">
+                            <div class="slide">
+                                <div class="custom-carousel-content" id="carousel_playa">
+                                    <img src="img/hotel_stars.png" alt="hotel_stars">
+                                </div>
+                                <h3>1 HOTEL SOUTH BEACH</h3>
+                                <p><span>220€</span>/noche</p>
+                            </div>
+                            <div class="slide">
+                                <div class="custom-carousel-content" id="carousel_nieve">
+                                    <img src="img/hotel_stars.png" alt="hotel_stars">
+                                </div>
+                                <h3>HOTEL SIERRA NEVADA</h3>
+                                <p><span>245€</span>/noche</p>
+                            </div>
+                            <div class="slide">
+                                <div class="custom-carousel-content" id="carousel_restuarante">
+                                    <img src="img/hotel_stars.png" alt="hotel_stars">
+                                </div>
+                                <h3>HOTEL PALACE</h3>
+                                <p><span>235€</span>/noche</p>
+                            </div>
+                            <div class="slide">
+                                <div class="custom-carousel-content" id="carousel_room">
+                                    <img src="img/hotel_stars.png" alt="hotel_stars">
+                                </div>
+                                <h3>1 HOTEL SOUTH BEACH</h3>
+                                <p><span>220€</span>/noche</p>
+                            </div>
+                            <div class="slide">
+                                <div class="custom-carousel-content" id="carousel_water">
+                                    <img src="img/hotel_stars.png" alt="hotel_stars">
+                                </div>
+                                <h3>1 HOTEL SOUTH BEACH</h3>
+                                <p><span>220€</span>/noche</p>
+                            </div>
+                            <div class="slide">
+                                <div class="custom-carousel-content" id="carousel_suite">
+                                    <img src="img/hotel_stars.png" alt="hotel_stars">
+                                </div>
+                                <h3>1 HOTEL SOUTH BEACH</h3>
+                                <p><span>220€</span>/noche</p>
+                            </div>
+                        </div>
+
+                        <div class="handles">
+                            <span class="prev">
+                                <img src="img/circle-arrow-left.png" alt="">
+                            </span>
+                            <span class="next">
+                                <img src="img/circle-arrow-right.png" alt="">
+                            </span>
+                        </div>
+                        <div class="dots">
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="descripcion-hotel-section">
+
+                <h2>Alójate en la icónica playa de miami</h2>
+
+                <p>Este histórico hotel frente al mar cuenta con una zona de playa privada y opciones para comer. Hay 4
+                    piscinas, incluida una piscina exclusiva para adultos en la azotea, disponibles en 1 Hotel South
+                    Beach. Todas las habitaciones cuentan con una tableta con periódicos digitales diarios y un
+                    televisor inteligente de pantalla plana de 55 pulgadas. Incluye minibar, sistema de filtración de
+                    agua en la habitación y máquina de café expreso con café orgánico. Los huéspedes del 1 Hotel South
+                    Beach pueden acceder al gimnasio y al spa y centro de bienestar del hotel. Los huéspedes que busquen
+                    aventuras pueden disfrutar de actividades de deportes acuáticos, mientras que los niños pueden
+                    explorar las actividades del club infantil. Se encuentran disponibles cuatro bares de refrigerios y
+                    bebidas, así como servicio de comidas en la habitación las 24 horas. El hotel está a 1,1 km del
+                    centro comercial Lincoln Road. Los huéspedes estarán a 5 minutos en coche de la vida nocturna y los
+                    restaurantes del centro de la ciudad de South Beach.</p>
+
+            </section>
+        </div>
+
+        <section class="mapa-experiencia-usuario-section">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.1255222567397!2d-80.12992202533053!3d25.79943267732819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b49d8b811283%3A0xf3c7905afcfbede0!2s1%20Hotel%20South%20Beach!5e0!3m2!1sen!2ses!4v1708827861942!5m2!1sen!2ses"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <div class="experiencias-usuarios">
+                <h3>Experiencias del usuario</h3>
+
+                <div>
+                    <div>
+                        <p>4.9</p>
+                        <img src="img/blackStars.png" alt="blackStars">
+                    </div>
+                    <p>Rating</p>
+                </div>
+
+                <div>
+                    <div>
+                        <p>347</p>
+                    </div>
+                    <p>Evaluaciones</p>
+                </div>
+
+                <div>
+                    <div class="rounded">
+                        <p class="fs-6">“¡Gracias al equipo del hotel por hacer de mi estancia una experiencia
+                            verdaderamente excepcional! 👏🏻🌟”</p>
+                    </div>
+                    <p>Comentario destacado</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="servicios-populares-section">
+            <div>
+                <h2><u>Servicios más populares</u></h2>
+
+                <div>
+                    <img src="img/spa.svg" alt="spa">
+                    <p>Spa</p>
+                </div>
+                <div>
+                    <img src="img/limusina.svg" alt="limusina">
+                    <p>Servicio de limusina</p>
+                </div>
+                <div>
+                    <img src="img/bus.svg" alt="bus">
+                    <p>Traslado al aeropuerto</p>
+                </div>
+                <div>
+                    <img src="img/roomService.svg" alt="roomService">
+                    <p>Serivicio de habitaciones 24/7</p>
+                </div>
+                <div>
+                    <img src="img/weight.svg" alt="weight">
+                    <p>Instalaciones deportivas y recreativas</p>
+                </div>
+                <div>
+                    <img src="img/mayordomo.svg" alt="mayordomo">
+                    <p>Servicio de mayordomo</p>
+                </div>
+            </div>
         </section>
 
     </main>
 
+    <footer>
+        <div>
+            <div class="logo-media-footer">
+                <a href="#" class="logo">
+                    <img src="img/Logo.png" alt="logo">
+                </a>
+                <ul class="social-media">
+                    <li><img src="img/facebook.png" alt="facebook"></li>
+                    <li><img src="img/instagram.png" alt="instagram"></li>
+                    <li><img src="img/twitter_x.png" alt="twitter_x"></li>
+                    <li><img src="img/linkedin.png" alt="linkedin"></li>
+                    <li><img src="img/youtube.png" alt="youtube"></li>
+                </ul>
+            </div>
+
+            <div class="footer-info-links-container">
+                <div class="direccion-contacto">
+                    <div>
+                        <h5>Dirección:</h5>
+                        <p>Nivel 1, Calle Sueca 12, Madrid 28079</p>
+                    </div>
+                    <div>
+                        <h5>Contacto:</h5>
+                        <p>964 40 60 11 - info@hmhotels.com</p>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <a href="#">Ayuda</a>
+                    <a href="#">Ajustes de privacidad</a>
+                    <a href="#">Log in</a>
+                    <a href="#">Política de cookies</a>
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Términos de servicio</a>
+                    <a href="#">Detalles de la compañía</a>
+                    <a href="#">Explorar</a>
+                    <a href="#">Compañía</a>
+                    <a href="#">Socios</a>
+                    <a href="#">Trabaja con nosotros</a>
+                </div>
+            </div>
+        </div>
+
+        <p class="mt-4 text-center copy">&copy; HMHotels Ltd 2002 - 2024</p>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
+    <script src="js/hotel.js"></script>
 </body>
 
 </html>
