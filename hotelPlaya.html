@@ -80,7 +80,7 @@
             </a>
 
             <div>
-                <a href="index.html" class="iniciar-sesion-link">
+                <a href="#" class="iniciar-sesion-link">
                     Iniciar sesión
                 </a>
             </div>
@@ -109,23 +109,23 @@
         </div>
 
         <nav class="opciones-interes">
-            <div>
+            <div data-group="group1">
                 <img src="img/building-community.svg" alt="building-community">
                 <p>Alojamiento</p>
             </div>
-            <div>
+            <div data-group="group1">
                 <img src="img/plane-departure.svg" alt="plane-departure">
                 <p>Vuelos</p>
             </div>
-            <div>
+            <div data-group="group1">
                 <img src="img/world-baggage.png" alt="world-baggage">
                 <p>Vuelo + Hotel</p>
             </div>
-            <div>
+            <div data-group="group1">
                 <img src="img/car.svg" alt="car">
                 <p>Alquiler de coches</p>
             </div>
-            <div>
+            <div data-group="group1">
                 <img src="img/building-carousel.svg" alt="building-carousel">
                 <p>Atracciones turísticas</p>
             </div>
@@ -133,6 +133,42 @@
 
         <div class="bg-white rounded-top">
             <section class="hotelTitle-fotos-section">
+
+                <div class="imgAbsolute">
+                    <img src="img/hibicus.png" alt="hibicus">
+                </div>
+
+                <div class="imgAbsolute2">
+                    <img src="img/coconut-drink.png" alt="necklace">
+                </div>
+
+                <div class="header">
+
+                    <!--Content before waves-->
+                    <div class="inner-header flex">
+                        <!--Just the logo.. Don't mind this-->
+                    </div>
+    
+                    <!--Waves Container-->
+                    <div>
+                        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                            <defs>
+                                <path id="gentle-wave"
+                                    d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                            </defs>
+                            <g class="parallax">
+                                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                            </g>
+                        </svg>
+                    </div>
+                    <!--Waves end-->
+    
+                </div>
+                <!--Header ends-->
 
                 <div class="hotelTitle">
                     <h1>1 Hotel South Beach</h1>
@@ -187,43 +223,31 @@
                                 <div class="custom-carousel-content" id="carousel_playa">
                                     <img src="img/hotel_stars.png" alt="hotel_stars">
                                 </div>
-                                <h3>1 HOTEL SOUTH BEACH</h3>
-                                <p><span>220€</span>/noche</p>
                             </div>
                             <div class="slide">
                                 <div class="custom-carousel-content" id="carousel_nieve">
                                     <img src="img/hotel_stars.png" alt="hotel_stars">
                                 </div>
-                                <h3>HOTEL SIERRA NEVADA</h3>
-                                <p><span>245€</span>/noche</p>
                             </div>
                             <div class="slide">
                                 <div class="custom-carousel-content" id="carousel_restuarante">
                                     <img src="img/hotel_stars.png" alt="hotel_stars">
                                 </div>
-                                <h3>HOTEL PALACE</h3>
-                                <p><span>235€</span>/noche</p>
                             </div>
                             <div class="slide">
                                 <div class="custom-carousel-content" id="carousel_room">
                                     <img src="img/hotel_stars.png" alt="hotel_stars">
                                 </div>
-                                <h3>1 HOTEL SOUTH BEACH</h3>
-                                <p><span>220€</span>/noche</p>
                             </div>
                             <div class="slide">
                                 <div class="custom-carousel-content" id="carousel_water">
                                     <img src="img/hotel_stars.png" alt="hotel_stars">
                                 </div>
-                                <h3>1 HOTEL SOUTH BEACH</h3>
-                                <p><span>220€</span>/noche</p>
                             </div>
                             <div class="slide">
                                 <div class="custom-carousel-content" id="carousel_suite">
                                     <img src="img/hotel_stars.png" alt="hotel_stars">
                                 </div>
-                                <h3>1 HOTEL SOUTH BEACH</h3>
-                                <p><span>220€</span>/noche</p>
                             </div>
                         </div>
 
@@ -299,29 +323,31 @@
             <div>
                 <h2><u>Servicios más populares</u></h2>
 
-                <div>
-                    <img src="img/spa.svg" alt="spa">
-                    <p>Spa</p>
-                </div>
-                <div>
-                    <img src="img/limusina.svg" alt="limusina">
-                    <p>Servicio de limusina</p>
-                </div>
-                <div>
-                    <img src="img/bus.svg" alt="bus">
-                    <p>Traslado al aeropuerto</p>
-                </div>
-                <div>
-                    <img src="img/roomService.svg" alt="roomService">
-                    <p>Serivicio de habitaciones 24/7</p>
-                </div>
-                <div>
-                    <img src="img/weight.svg" alt="weight">
-                    <p>Instalaciones deportivas y recreativas</p>
-                </div>
-                <div>
-                    <img src="img/mayordomo.svg" alt="mayordomo">
-                    <p>Servicio de mayordomo</p>
+                <div class="servicios-populares-container">
+                    <div>
+                        <img src="img/spa.svg" alt="spa">
+                        <p>Spa</p>
+                    </div>
+                    <div>
+                        <img src="img/limusina.svg" alt="limusina">
+                        <p>Servicio de limusina</p>
+                    </div>
+                    <div>
+                        <img src="img/bus.svg" alt="bus">
+                        <p>Traslado al aeropuerto</p>
+                    </div>
+                    <div>
+                        <img src="img/roomService.svg" alt="roomService">
+                        <p>Serivicio de habitaciones 24/7</p>
+                    </div>
+                    <div>
+                        <img src="img/weight.svg" alt="weight">
+                        <p>Instalaciones deportivas y recreativas</p>
+                    </div>
+                    <div>
+                        <img src="img/mayordomo.svg" alt="mayordomo">
+                        <p>Servicio de mayordomo</p>
+                    </div>
                 </div>
             </div>
         </section>

@@ -326,3 +326,24 @@ window.addEventListener('load',function (){
     var container = document.querySelector('.PostSlide .innerContainer');
     new PostSlider(container,5);
 })
+
+//----------------------
+//Manejar 'active' de opciones de interés
+document.addEventListener('DOMContentLoaded', function () {
+    const opcionesInteres = document.querySelector('.opciones-interes').children;
+    const opcionesArray = [...opcionesInteres];
+
+    opcionesArray.forEach(div => {
+        div.addEventListener('click', function () {
+            const group = this.dataset.group;
+            opcionesArray.forEach(element => {
+                if (element.dataset.group === group) {
+                    element.classList.remove('active');
+                }
+            });
+
+            this.classList.add('active');
+            this.hover = false;
+        });
+    });
+});
