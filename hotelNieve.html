@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HM Hotels | Hotel Playa</title>
+    <title>HM Hotels | Hotel Nieve</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,12 +16,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/hotel.css">
+    <link rel="stylesheet" href="stylesheets/hotelNieve.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 </head>
 
-<body>
+<body id="contenedor">
     <header class="d-flex position-absolute">
         <button class="btn btn-primary menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
             aria-controls="offcanvasExample">
@@ -31,6 +32,18 @@
             <img src="img/Logo.png" alt="logo">
         </a>
     </header>
+
+    <div ></div>
+
+    <script>
+        var contenedor = document.getElementById('contenedor');
+
+        for (var i = 0; i < 50; i++) {
+            var snowflake = document.createElement('div');
+            snowflake.className = 'snowflake';
+            contenedor.appendChild(snowflake);
+        }
+    </script>
 
     <aside>
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
@@ -42,12 +55,12 @@
             <div class="offcanvas-body d-flex flex-column justify-content-between gap-5">
                 <div class="navBar-links">
                     <a href="index.html">Inicio</a>
-                    <a href="#">
+                    <a href="hotelPlaya.html">
                         <p>Hotel Playa</p>
                         <img src="img/beachIcon.png" alt="beachIcon">
                         <img src="img/new.png" alt="new">
                     </a>
-                    <a href="hotelNieve.html">
+                    <a href="#">
                         <p>Hotel Nieve</p>
                         <img src="img/ice-mountain.png" alt="beachIcon">
                         <img src="img/new.png" alt="new">
@@ -135,41 +148,15 @@
             <section class="hotelTitle-fotos-section">
 
                 <div class="imgAbsolute">
-                    <img src="img/hibicus.png" alt="hibicus">
+                    <img src="img/snow-globe.png" alt="hibicus">
                 </div>
 
                 <div class="imgAbsolute2">
-                    <img src="img/coconut-drink.png" alt="necklace">
+                    <img src="img/snowflake.png" alt="necklace">
                 </div>
-
-                <div class="header">
-
-                    <!--Content before waves-->
-                    <div class="inner-header flex"></div>
-    
-                    <!--Waves Container-->
-                    <div>
-                        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                            <defs>
-                                <path id="gentle-wave"
-                                    d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                            </defs>
-                            <g class="parallax">
-                                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-                                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-                                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-                                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-                            </g>
-                        </svg>
-                    </div>
-                    <!--Waves end-->
-    
-                </div>
-                <!--Header ends-->
 
                 <div class="hotelTitle">
-                    <h1>1 Hotel South Beach</h1>
+                    <h1>HOTEL SIERRA NEVADA</h1>
                     <img src="img/starsHotel_view.png" alt="stars">
                 </div>
 
@@ -266,19 +253,9 @@
 
             <section class="descripcion-hotel-section">
 
-                <h2>Alójate en la icónica playa de miami</h2>
+                <h2>Transpórtate a un paraje único en el corazón de Utah</h2>
 
-                <p>Este histórico hotel frente al mar cuenta con una zona de playa privada y opciones para comer. Hay 4
-                    piscinas, incluida una piscina exclusiva para adultos en la azotea, disponibles en 1 Hotel South
-                    Beach. Todas las habitaciones cuentan con una tableta con periódicos digitales diarios y un
-                    televisor inteligente de pantalla plana de 55 pulgadas. Incluye minibar, sistema de filtración de
-                    agua en la habitación y máquina de café expreso con café orgánico. Los huéspedes del 1 Hotel South
-                    Beach pueden acceder al gimnasio y al spa y centro de bienestar del hotel. Los huéspedes que busquen
-                    aventuras pueden disfrutar de actividades de deportes acuáticos, mientras que los niños pueden
-                    explorar las actividades del club infantil. Se encuentran disponibles cuatro bares de refrigerios y
-                    bebidas, así como servicio de comidas en la habitación las 24 horas. El hotel está a 1,1 km del
-                    centro comercial Lincoln Road. Los huéspedes estarán a 5 minutos en coche de la vida nocturna y los
-                    restaurantes del centro de la ciudad de South Beach.</p>
+                <p>St. Regis Deer Valley le da la bienvenida a Utah con un lujo inigualable y una ubicación impecable. Adornado con muebles distintivos y una decoración elegante, nuestro resort imita la belleza de nuestra ubicación en Park City, escondido dentro de las pintorescas montañas Wasatch. Durante la temporada de invierno, ofrecemos un cómodo acceso directo a las pistas de esquí con valet de esquí privado. En los meses más cálidos, los amantes de las emociones fuertes pueden sumergirse en el ciclismo de montaña y el senderismo. Deléitese durante todo el año con un tratamiento o masaje exclusivo en The St. Regis Spa, el exclusivo spa de día de nuestro hotel. Únase a nosotros para disfrutar de una comida deliciosa en nuestros diversos restaurantes en el lugar, que ofrecen deliciosa comida estadounidense y cócteles hechos a mano. Relájese en habitaciones y suites de hotel cuidadosamente decoradas que admiten mascotas y que cuentan con ropa de cama lujosa, impecables baños de mármol y terrazas privadas con vista a las pistas de esquí. Viva exquisitamente en una atmósfera de gran sutileza y refinamiento en nuestro hotel de la estación de esquí de Park City, Utah.</p>
 
             </section>
         </div>
@@ -357,16 +334,16 @@
 
         <div class="habitaciones-container">
             <div class="habitacion-container">
-                <h4>Vacacional</h4>
+                <h4>Básica</h4>
             </div>
             <div class="habitacion-container">
-                <h4>Tropical</h4>
+                <h4>Doble</h4>
             </div>
             <div class="habitacion-container">
-                <h4>Paradisiaca</h4>
+                <h4>Premium</h4>
             </div>
             <div class="habitacion-container">
-                <h4>Tropical paradise</h4>
+                <h4>Deluxe</h4>
             </div>
         </div>
     </section>

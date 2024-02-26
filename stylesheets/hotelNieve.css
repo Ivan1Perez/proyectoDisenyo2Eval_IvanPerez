@@ -1147,6 +1147,1153 @@ footer .footer-info-links-container .footer-links a {
   background-image: url("../img/carousel_suite.jpeg");
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F0EFEF;
+}
+
+header {
+  width: 100%;
+  justify-content: space-between;
+}
+@media (min-width: 1200px) {
+  header {
+    justify-content: unset;
+  }
+}
+header .menu {
+  margin: 1rem;
+  background-color: transparent;
+  border: none;
+}
+header .menu:active, header .menu:hover, header .menu:focus-visible {
+  background-color: transparent !important;
+  border: none;
+}
+@media (min-width: 1200px) {
+  header .menu img {
+    width: 5vw;
+  }
+}
+header .logo {
+  margin: 1rem;
+}
+header .logo img {
+  width: 100px;
+  border-radius: 10px;
+  filter: hue-rotate(45deg) drop-shadow(2px 4px 6px black);
+}
+
+@media (min-width: 1600px) {
+  aside #offcanvasExample {
+    width: 20vw;
+  }
+}
+aside #offcanvasExampleLabel {
+  font-size: 2rem;
+}
+@media (min-width: 1200px) {
+  aside #offcanvasExampleLabel {
+    font-size: 3vw;
+  }
+}
+aside .navBar-links {
+  font-family: "League Spartan", sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+aside .navBar-links a {
+  text-decoration: none;
+  color: #121212;
+  font-weight: 600;
+}
+aside .navBar-links a {
+  border-bottom: 1px solid #b4b4b4;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 40px;
+}
+@media (min-width: 1200px) {
+  aside .navBar-links a {
+    font-size: 1.8vw;
+  }
+}
+@media (min-width: 1600px) {
+  aside .navBar-links a {
+    height: 3vw;
+  }
+}
+aside .navBar-links a img {
+  height: 80%;
+  min-height: 40px;
+}
+aside .navBar-links a img:last-child {
+  margin-left: auto;
+}
+aside .direccion-contacto h5 {
+  font-size: 1.2rem;
+}
+@media (min-width: 1200px) {
+  aside .direccion-contacto h5 {
+    font-size: 1.4vw;
+  }
+}
+aside .direccion-contacto p {
+  font-size: 0.8rem;
+}
+@media (min-width: 1200px) {
+  aside .direccion-contacto p {
+    font-size: 1vw;
+  }
+}
+
+main {
+  background-image: url("../img/backgroundIndex.png");
+  background-size: cover;
+}
+main .heroSection {
+  color: #444444;
+  font-family: "League Spartan", sans-serif;
+}
+main .heroSection .heroSectionTitleContainer {
+  margin-top: 150px;
+}
+main .heroSection .heroSectionTitleContainer h1 {
+  padding-top: 1rem;
+  font-size: 3.5rem;
+}
+@media (min-width: 768px) {
+  main .heroSection .heroSectionTitleContainer h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  main .heroSection .heroSectionTitleContainer h1 {
+    width: 600px;
+    text-align: unset;
+  }
+}
+@media (min-width: 1200px) {
+  main .heroSection .heroSectionTitleContainer h1 {
+    font-size: 7vw;
+    width: unset;
+  }
+}
+main .heroSection .heroSectionTitleContainer .brandsList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  list-style: none;
+  background-color: rgba(68, 68, 68, 0.15);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+}
+@media (min-width: 768px) {
+  main .heroSection .heroSectionTitleContainer .brandsList {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  main .heroSection .heroSectionTitleContainer .brandsList img {
+    width: 9vw;
+  }
+}
+main .heroSection .heroSectionTitleContainer .brandsList li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .heroSection .heroSectionDescriptionContainer > p {
+  margin-top: 1rem;
+  border-radius: 20px;
+  padding: 1rem;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(59deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 51%, rgba(255, 255, 255, 0) 100%);
+  font-size: 1.6rem;
+}
+@media (min-width: 768px) {
+  main .heroSection .heroSectionDescriptionContainer > p {
+    width: 500px;
+    margin: 1rem auto;
+  }
+}
+@media (min-width: 992px) {
+  main .heroSection .heroSectionDescriptionContainer > p {
+    float: left;
+  }
+}
+@media (min-width: 1200px) {
+  main .heroSection .heroSectionDescriptionContainer > p {
+    float: unset;
+    margin: 1rem 0;
+    margin-left: auto;
+    width: unset;
+    font-size: 2.6vw;
+  }
+}
+main .heroSection .heroSectionDescriptionContainer .testimonialContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+main .heroSection .heroSectionDescriptionContainer .testimonialContainer img {
+  margin: auto;
+  display: block;
+  /* &:first-child {
+      width: 250px;
+      width: 250px;
+
+      @include sm {
+          width: 300px;
+      }
+  } */
+}
+main .heroSection .heroSectionDescriptionContainer .testimonialContainer #testimonialImg {
+  width: 250px;
+}
+@media (min-width: 992px) {
+  main .heroSection .heroSectionDescriptionContainer .testimonialContainer #testimonialImg {
+    width: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  main .heroSection .heroSectionDescriptionContainer .testimonialContainer #testimonialImg {
+    width: 22vw;
+  }
+}
+main .heroSection .heroSectionDescriptionContainer .testimonialContainer img:last-child {
+  width: 18vw;
+}
+@media (min-width: 576px) {
+  main .heroSection .heroSectionDescriptionContainer .testimonialContainer {
+    flex-direction: unset;
+  }
+}
+@media (min-width: 992px) {
+  main .heroSection .heroSectionDescriptionContainer .testimonialContainer {
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+}
+main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion-registrarse-container {
+  width: fit-content;
+  margin: auto;
+}
+@media (min-width: 992px) {
+  main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion-registrarse-container {
+    width: unset;
+  }
+}
+@media (min-width: 1200px) {
+  main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion-registrarse-container {
+    font-size: 1.2vw;
+  }
+}
+main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion-registrarse-container .explorarHoteles-inicioSesion-container {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem auto;
+  background-color: rgba(217, 217, 217, 0.4392156863);
+  border-radius: 6px;
+  padding: 0.8rem 0.4rem;
+}
+@media (min-width: 330px) {
+  main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion-registrarse-container .explorarHoteles-inicioSesion-container {
+    padding: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion-registrarse-container .explorarHoteles-inicioSesion-container {
+    gap: 1rem;
+  }
+}
+main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion-registrarse-container .explorarHoteles-inicioSesion-container a {
+  display: block;
+  text-decoration: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.3);
+  border: 2px solid white;
+  font-weight: bold;
+  text-align: center;
+  width: fit-content;
+  width: -moz-fit-content;
+}
+main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion-registrarse-container .explorarHoteles-inicioSesion-container a:first-child {
+  background-color: white;
+  color: black;
+}
+main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion-registrarse-container .explorarHoteles-inicioSesion-container a:nth-child(2) {
+  background-color: rgba(64, 64, 64, 0.7019607843);
+  color: white;
+}
+main .heroSection .heroSectionDescriptionContainer .explorarHoteles-inicioSesion-registrarse-container .registrarseAnchor {
+  margin: auto;
+  display: block;
+  text-decoration: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.3);
+  border: 2px solid white;
+  font-weight: bold;
+  text-align: center;
+  width: fit-content;
+  width: -moz-fit-content;
+  background-color: #C49C74;
+  color: black;
+}
+
+.comienza-a-buscar-section {
+  background-color: #DDDDDD;
+  position: relative;
+  top: -10px;
+  padding-bottom: 1.5rem;
+}
+.comienza-a-buscar-section h2 {
+  font-family: "Playfair Display SC", serif;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.9215686275);
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  padding: unset;
+}
+@media (min-width: 768px) {
+  .comienza-a-buscar-section h2 {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .comienza-a-buscar-section h2 {
+    font-size: 4vw;
+  }
+}
+.comienza-a-buscar-section form {
+  padding-top: 0.5rem;
+  font-family: "Outfit", sans-serif;
+}
+@media (min-width: 768px) {
+  .comienza-a-buscar-section form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media (min-width: 992px) {
+  .comienza-a-buscar-section form {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .comienza-a-buscar-section form {
+    display: flex;
+    font-size: 1.4vw;
+  }
+  .comienza-a-buscar-section form #checkIn,
+  .comienza-a-buscar-section form #checkOut {
+    width: 12vw;
+  }
+}
+.comienza-a-buscar-section form input,
+.comienza-a-buscar-section form select {
+  border: none;
+  padding: 0.5rem;
+  padding-left: 2.5rem;
+  border-radius: 6px;
+  margin: 1rem auto;
+  display: block;
+  color: #444444;
+  background-color: white;
+}
+@media (min-width: 576px) {
+  .comienza-a-buscar-section form input,
+  .comienza-a-buscar-section form select {
+    width: 320px;
+  }
+}
+@media (min-width: 1200px) {
+  .comienza-a-buscar-section form input,
+  .comienza-a-buscar-section form select {
+    background-size: 2vw;
+    padding-left: 3vw;
+  }
+}
+.comienza-a-buscar-section form input::placeholder,
+.comienza-a-buscar-section form select::placeholder {
+  color: #909090;
+}
+.comienza-a-buscar-section form input:first-child {
+  background-image: url("../img/building-community.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 0.5rem;
+}
+@media (min-width: 768px) {
+  .comienza-a-buscar-section form input:first-child {
+    width: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  .comienza-a-buscar-section form input:first-child {
+    width: 28vw;
+  }
+}
+.comienza-a-buscar-section form #checkIn {
+  background-image: url("../img/calendar-up.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 0.5rem;
+}
+.comienza-a-buscar-section form #checkOut {
+  background-image: url("../img/calendar-down.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 0.5rem;
+}
+@media (min-width: 768px) {
+  .comienza-a-buscar-section form .flatpickr-input {
+    width: fit-content;
+    width: -moz-fit-content;
+  }
+}
+@media (min-width: 768px) {
+  .comienza-a-buscar-section form .dropdown {
+    grid-column: 2/3;
+  }
+}
+@media (min-width: 992px) {
+  .comienza-a-buscar-section form .dropdown {
+    grid-column: unset;
+  }
+}
+.comienza-a-buscar-section form .customDropdown {
+  width: fit-content;
+  background-color: white;
+  margin: 1rem auto;
+}
+.comienza-a-buscar-section form .customDropdown:focus {
+  color: black;
+}
+.comienza-a-buscar-section form .customDropdown:not(:active) {
+  color: black;
+}
+.comienza-a-buscar-section form .customDropdown-menu li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  user-select: none;
+}
+@media (min-width: 1200px) {
+  .comienza-a-buscar-section form .customDropdown-menu li {
+    font-size: 1.5vw;
+    gap: 2vw;
+  }
+}
+.comienza-a-buscar-section form .customDropdown-menu li p {
+  margin: 0;
+}
+.comienza-a-buscar-section form .customDropdown-menu li div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 91px;
+  min-width: 91px;
+  gap: 0.5rem;
+  border: 1px solid gray;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+}
+.comienza-a-buscar-section form .customDropdown-menu li div label:first-child,
+.comienza-a-buscar-section form .customDropdown-menu li div label:last-child {
+  cursor: pointer;
+}
+.comienza-a-buscar-section form .customDropdown-menu li div label:nth-child(2) {
+  text-align: center;
+  min-width: 27px;
+}
+.comienza-a-buscar-section form .customDropdown-menu li:nth-child(2) label:first-child, .comienza-a-buscar-section form .customDropdown-menu li:last-child label:first-child {
+  cursor: not-allowed;
+  color: #bdbdbd;
+}
+.comienza-a-buscar-section form button {
+  border-radius: 6px;
+  color: black;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: auto;
+  display: block;
+}
+@media (min-width: 1200px) {
+  .comienza-a-buscar-section form button {
+    font-size: 1.4vw;
+  }
+}
+.comienza-a-buscar-section form button[type=submit] {
+  font-weight: 600;
+  background-color: #C49C74;
+}
+@media (min-width: 992px) {
+  .comienza-a-buscar-section form button[type=submit] {
+    grid-column: 2/4;
+    position: relative;
+    left: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .comienza-a-buscar-section form button[type=submit] {
+    left: unset;
+  }
+}
+
+.encuentra-tu-hotel-section {
+  padding: 1rem;
+}
+.encuentra-tu-hotel-section h2 {
+  font-family: "Playfair Display SC", serif;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.9215686275);
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .encuentra-tu-hotel-section h2 {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .encuentra-tu-hotel-section h2 {
+    font-size: 4vw;
+  }
+}
+.encuentra-tu-hotel-section .custom-carousel-inner .custom-carousel-content {
+  height: 304.5px;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+}
+.encuentra-tu-hotel-section .custom-carousel-inner .custom-carousel-content img {
+  width: 30%;
+  position: relative;
+  top: 5%;
+  left: 5%;
+  border-radius: 6px;
+}
+.encuentra-tu-hotel-section h3 {
+  font-family: "Playfair Display SC", serif;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.encuentra-tu-hotel-section p {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+}
+.encuentra-tu-hotel-section p span {
+  color: #AE1E1E;
+}
+
+.beneficios-section {
+  padding: 1rem;
+  background-color: white;
+  font-family: "League Spartan", sans-serif;
+  color: black;
+}
+@media (min-width: 768px) {
+  .beneficios-section {
+    display: flex;
+    gap: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .beneficios-section {
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    column-gap: 2rem;
+  }
+}
+.beneficios-section .beneficios-section-info h2 {
+  font-family: "Playfair Display SC", serif;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.9215686275);
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .beneficios-section .beneficios-section-info h2 {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .beneficios-section .beneficios-section-info h2 {
+    font-size: 4vw;
+  }
+}
+@media (min-width: 992px) {
+  .beneficios-section .beneficios-section-info {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .beneficios-section .beneficios-section-info p {
+    font-size: 1.4vw;
+  }
+}
+.beneficios-section .beneficios-section-info .experiencia-servicio-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+.beneficios-section .beneficios-section-info .experiencia-servicio-container h4 {
+  font-weight: 600;
+}
+@media (min-width: 992px) {
+  .beneficios-section .beneficios-section-info .experiencia-servicio-container h4 {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1200px) {
+  .beneficios-section .beneficios-section-info .experiencia-servicio-container h4 {
+    font-size: 1.8vw;
+  }
+}
+.beneficios-section .beneficios-section-img {
+  display: none;
+  width: 100%;
+  border-radius: 10px;
+  background-image: url(../img/waiter.png);
+  background-size: cover;
+  margin: 1rem 0;
+}
+@media (min-width: 768px) {
+  .beneficios-section .beneficios-section-img {
+    display: block;
+  }
+}
+
+.exploreMoreBtn {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7019607843);
+  width: fit-content;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  border: 1px solid white;
+  outline: 3px solid rgba(0, 0, 0, 0.7019607843);
+  border-radius: 9999px;
+  margin: 1rem auto;
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.2vw 0;
+  padding-left: 3vw;
+  transition: background-color 0.3s, transform 0.3s, color 0.3s;
+}
+.exploreMoreBtn p {
+  margin: 0;
+}
+.exploreMoreBtn:hover {
+  background-color: white;
+  transform: scale(1.05);
+  color: black;
+  border-color: black;
+}
+.exploreMoreBtn:hover p, .exploreMoreBtn:hover svg {
+  transition: color 0.3s;
+  color: black;
+}
+.exploreMoreBtn:hover svg path {
+  fill: black;
+}
+.exploreMoreBtn .svg-arrow-extraSmall {
+  width: 6vw;
+  height: 6.5vw;
+  margin-right: 1vw;
+}
+@media (min-width: 576px) {
+  .exploreMoreBtn .svg-arrow-extraSmall {
+    width: 4vw;
+    height: 3.5vw;
+    margin-right: unset;
+  }
+}
+@media (min-width: 1200px) {
+  .exploreMoreBtn .svg-arrow-extraSmall {
+    width: 3.4vw;
+    height: 3vw;
+  }
+}
+
+hr {
+  margin: 0;
+}
+
+.reserva-section {
+  background-color: white;
+  padding: 1rem;
+}
+.reserva-section p {
+  margin: 0;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .reserva-section p {
+    font-size: 1.2rem;
+  }
+}
+.reserva-section .reserva-container {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid black;
+}
+.reserva-section .reserva-container h2 {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .reserva-section .reserva-container h2 {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .reserva-section .reserva-container h2 {
+    font-size: 3.7vw;
+  }
+}
+@media (min-width: 1200px) {
+  .reserva-section .reserva-container p {
+    font-size: 1.5vw;
+  }
+}
+.reserva-section .reservar-explorar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.reserva-section .reservar-explorar button {
+  border: 2px solid #4D4D4D;
+  padding: 0.6rem 1.3rem;
+  color: white;
+  background-color: black;
+  font-weight: 600;
+}
+@media (min-width: 1200px) {
+  .reserva-section .reservar-explorar button {
+    font-size: 1.5vw;
+  }
+}
+
+footer {
+  margin: 1rem;
+  padding: 1rem;
+  font-family: "League Spartan", sans-serif;
+  background-color: #DDE5E1;
+  color: #121212;
+}
+footer .logo-media-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .logo-media-footer .logo {
+  margin: 1rem;
+}
+footer .logo-media-footer .logo img {
+  width: 100px;
+  border-radius: 10px;
+  filter: hue-rotate(45deg) drop-shadow(2px 4px 6px black);
+}
+footer .logo-media-footer .logo {
+  margin: 0;
+}
+@media (min-width: 1200px) {
+  footer .logo-media-footer .logo img {
+    width: 10vw;
+  }
+}
+footer .logo-media-footer .social-media {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+}
+@media (min-width: 992px) {
+  footer .logo-media-footer .social-media {
+    display: flex;
+  }
+}
+footer .logo-media-footer .social-media li {
+  cursor: pointer;
+  width: 41.5px;
+  height: 41.5px;
+}
+footer .logo-media-footer .social-media li img {
+  width: 100%;
+}
+footer .logo-media-footer .social-media li:last-child {
+  grid-column: 1/3;
+}
+@media (min-width: 1200px) {
+  footer .logo-media-footer .social-media li {
+    width: 5vw;
+    height: 5vw;
+  }
+}
+@media (min-width: 576px) {
+  footer .logo-media-footer .social-media {
+    row-gap: 1rem;
+    column-gap: 2rem;
+  }
+}
+footer .footer-info-links-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 576px) {
+  footer .footer-info-links-container {
+    row-gap: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  footer .footer-info-links-container {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+footer .footer-info-links-container .direccion-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+footer .footer-info-links-container .direccion-contacto h5 {
+  margin: 0;
+}
+@media (min-width: 1200px) {
+  footer .footer-info-links-container .direccion-contacto h5 {
+    font-size: 2.2vw;
+  }
+}
+footer .footer-info-links-container .direccion-contacto p {
+  margin: 0;
+}
+@media (min-width: 1200px) {
+  footer .footer-info-links-container .direccion-contacto p {
+    font-size: 1.4vw;
+  }
+}
+@media (min-width: 576px) {
+  footer .footer-info-links-container .direccion-contacto {
+    flex-direction: unset;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1200px) {
+  footer .footer-info-links-container .direccion-contacto {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+footer .footer-info-links-container .footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-info-links-container .footer-links a {
+  text-decoration: none;
+  color: #121212;
+  font-weight: 600;
+}
+@media (min-width: 576px) {
+  footer .footer-info-links-container .footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: fit-content;
+    text-align: center;
+  }
+}
+@media (min-width: 1200px) {
+  footer .footer-info-links-container .footer-links {
+    font-size: 1.4vw;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .copy {
+    font-size: 1.4vw;
+  }
+}
+
+.handles svg path {
+  stroke: #e2e2e2 !important;
+}
+
+.dots span {
+  background: #444 !important;
+  opacity: 0.5;
+}
+
+.dots span.active {
+  opacity: 1;
+}
+
+.PostSlide {
+  max-width: 1300px;
+  margin: auto;
+}
+@media (min-width: 1200px) {
+  .PostSlide {
+    max-width: unset;
+  }
+}
+
+.PostSlide .innerContainer .slider {
+  display: flex;
+  width: 1280px;
+  overflow-x: hidden;
+  margin: auto;
+}
+@media (min-width: 1200px) {
+  .PostSlide .innerContainer .slider {
+    width: unset;
+  }
+}
+
+.PostSlide .innerContainer .slider .slide {
+  display: block;
+  background-size: cover !important;
+  background-position: center center !important;
+  min-width: 280px;
+}
+@media (min-width: 1200px) {
+  .PostSlide .innerContainer .slider .slide {
+    min-width: 23vw;
+  }
+}
+
+.PostSlide .innerContainer .slider {
+  position: relative;
+  z-index: 2;
+}
+
+.PostSlide .innerContainer .handles {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -230px;
+  width: 100%;
+  cursor: pointer;
+  z-index: 4;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.PostSlide .dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+
+.PostSlide .dots span {
+  border-radius: 10px;
+  background: #CBCBCB;
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.PostSlide .slider * {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.PostSlide .handles > span {
+  transition: opacity 0.3s;
+}
+
+.PostSlide .handles .prev {
+  opacity: 0;
+}
+
+.PostSlide .handles .next {
+  opacity: 1;
+}
+
+.PostSlide .handles * {
+  user-select: none;
+}
+
+@media (min-width: 1280px) {
+  .PostSlide .innerContainer .slider {
+    width: 1200px !important;
+    margin: auto;
+  }
+}
+@media (min-width: 1280px) and (min-width: 1200px) {
+  .PostSlide .innerContainer .slider {
+    width: unset !important;
+  }
+}
+@media (max-width: 1280px) {
+  .PostSlide .innerContainer .handles {
+    width: calc(100% + 30px) !important;
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+  }
+}
+@media (min-width: 960px) and (max-width: 1280px) {
+  .PostSlide .innerContainer .slider {
+    width: 960px !important;
+  }
+}
+@media (min-width: 960px) and (max-width: 1280px) {
+  .PostSlide .innerContainer .slider {
+    width: 960px !important;
+  }
+}
+@media (min-width: 640px) and (max-width: 960px) {
+  .PostSlide .innerContainer .slider {
+    width: 640px !important;
+  }
+}
+@media (max-width: 640px) {
+  .PostSlide .innerContainer .slider {
+    width: 300px !important;
+  }
+}
+.PostSlide .innerContainer,
+.PostSlide .slider,
+.PostSlide .handles,
+.PostSlide .dots {
+  direction: ltr;
+}
+
+.PostSlide .innerContainer .slider .slide > div {
+  display: block;
+  background-size: cover !important;
+  background-position: center center !important;
+  min-width: 100%;
+  border-radius: 8px;
+}
+
+.PostSlide {
+  overflow: hidden;
+}
+
+.handles img {
+  width: 50px;
+}
+.handles img:first-child {
+  margin-left: 1rem;
+}
+.handles img:last-child {
+  margin-right: 1rem;
+}
+
+.innerContainer .custom-carousel-content {
+  height: 304.5px;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 1200px) {
+  .innerContainer .custom-carousel-content {
+    min-height: 24vw;
+  }
+}
+.innerContainer .custom-carousel-content img {
+  width: 30%;
+  position: relative;
+  top: 5%;
+  left: 5%;
+  border-radius: 6px;
+}
+@media (min-width: 1200px) {
+  .innerContainer h3 {
+    font-size: 1.4vw;
+  }
+  .innerContainer p {
+    font-size: 1.2vw;
+  }
+}
+
+.slide:nth-child(1) .custom-carousel-content {
+  background-image: url("../img/hotelPlaya_carousel.jpg");
+}
+
+.slide:nth-child(2) .custom-carousel-content {
+  background-image: url("../img/hotelNieve_carousel.png");
+}
+
+.slide:nth-child(3) .custom-carousel-content {
+  background-image: url("../img/hotelRestaurante_carousel.png");
+}
+
+.slide:nth-child(4) .custom-carousel-content {
+  background-image: url("../img/room_carousel.jpeg");
+}
+
+.slide:nth-child(5) .custom-carousel-content {
+  background-image: url("../img/water_carousel.jpg");
+}
+
+.slide:nth-child(6) .custom-carousel-content {
+  background-image: url("../img/carousel_suite.jpeg");
+}
+
 body {
   background: url(../img/background-hotelPlaya.png) no-repeat fixed;
   background-size: 100%;
@@ -2042,5 +3189,542 @@ footer div .footer-info-links-container .direccion-contacto {
     height: 30vh;
   }
 }
+body {
+  background: url(../img/snowLandscape.jpeg) no-repeat fixed;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
 
-/*# sourceMappingURL=hotel.css.map */
+.snowflake {
+  --size: 1vw;
+  width: var(--size);
+  height: var(--size);
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: -5vh;
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translate3d(var(--left-ini), 0, 0);
+  }
+  100% {
+    transform: translate3d(var(--left-end), 110vh, 0);
+  }
+}
+.snowflake:nth-child(1) {
+  --size: 0.6vw;
+  --left-ini: -1vw;
+  --left-end: 10vw;
+  left: 52vw;
+  animation: snowfall 9s linear infinite;
+  animation-delay: -5s;
+}
+
+.snowflake:nth-child(2) {
+  --size: 0.2vw;
+  --left-ini: -9vw;
+  --left-end: 0vw;
+  left: 41vw;
+  animation: snowfall 8s linear infinite;
+  animation-delay: -3s;
+}
+
+.snowflake:nth-child(3) {
+  --size: 0.8vw;
+  --left-ini: -7vw;
+  --left-end: 0vw;
+  left: 30vw;
+  animation: snowfall 8s linear infinite;
+  animation-delay: -2s;
+}
+
+.snowflake:nth-child(4) {
+  --size: 1vw;
+  --left-ini: 10vw;
+  --left-end: -7vw;
+  left: 6vw;
+  animation: snowfall 7s linear infinite;
+  animation-delay: -3s;
+}
+
+.snowflake:nth-child(5) {
+  --size: 0.6vw;
+  --left-ini: -2vw;
+  --left-end: -7vw;
+  left: 68vw;
+  animation: snowfall 11s linear infinite;
+  animation-delay: -4s;
+}
+
+.snowflake:nth-child(6) {
+  --size: 0.4vw;
+  --left-ini: -7vw;
+  --left-end: 5vw;
+  left: 12vw;
+  animation: snowfall 15s linear infinite;
+  animation-delay: -6s;
+}
+
+.snowflake:nth-child(7) {
+  --size: 0.8vw;
+  --left-ini: -2vw;
+  --left-end: 10vw;
+  left: 10vw;
+  animation: snowfall 15s linear infinite;
+  animation-delay: -10s;
+}
+
+.snowflake:nth-child(8) {
+  --size: 0.4vw;
+  --left-ini: 1vw;
+  --left-end: -4vw;
+  left: 58vw;
+  animation: snowfall 7s linear infinite;
+  animation-delay: -3s;
+}
+
+.snowflake:nth-child(9) {
+  --size: 0.4vw;
+  --left-ini: -7vw;
+  --left-end: 10vw;
+  left: 36vw;
+  animation: snowfall 7s linear infinite;
+  animation-delay: -4s;
+}
+
+.snowflake:nth-child(10) {
+  --size: 1vw;
+  --left-ini: 10vw;
+  --left-end: 9vw;
+  left: 76vw;
+  animation: snowfall 9s linear infinite;
+  animation-delay: -9s;
+}
+
+.snowflake:nth-child(11) {
+  --size: 0.6vw;
+  --left-ini: -8vw;
+  --left-end: -4vw;
+  left: 96vw;
+  animation: snowfall 13s linear infinite;
+  animation-delay: -3s;
+}
+
+.snowflake:nth-child(12) {
+  --size: 0.2vw;
+  --left-ini: -4vw;
+  --left-end: -1vw;
+  left: 63vw;
+  animation: snowfall 6s linear infinite;
+  animation-delay: -1s;
+}
+
+.snowflake:nth-child(13) {
+  --size: 0.8vw;
+  --left-ini: 2vw;
+  --left-end: 2vw;
+  left: 17vw;
+  animation: snowfall 7s linear infinite;
+  animation-delay: -2s;
+}
+
+.snowflake:nth-child(14) {
+  --size: 1vw;
+  --left-ini: 9vw;
+  --left-end: -7vw;
+  left: 44vw;
+  animation: snowfall 14s linear infinite;
+  animation-delay: -8s;
+}
+
+.snowflake:nth-child(15) {
+  --size: 0.8vw;
+  --left-ini: 2vw;
+  --left-end: 5vw;
+  left: 59vw;
+  animation: snowfall 11s linear infinite;
+  animation-delay: -4s;
+}
+
+.snowflake:nth-child(16) {
+  --size: 1vw;
+  --left-ini: 9vw;
+  --left-end: 6vw;
+  left: 68vw;
+  animation: snowfall 13s linear infinite;
+  animation-delay: -10s;
+}
+
+.snowflake:nth-child(17) {
+  --size: 0.4vw;
+  --left-ini: 7vw;
+  --left-end: -1vw;
+  left: 56vw;
+  animation: snowfall 6s linear infinite;
+  animation-delay: -9s;
+}
+
+.snowflake:nth-child(18) {
+  --size: 0.6vw;
+  --left-ini: -9vw;
+  --left-end: 3vw;
+  left: 3vw;
+  animation: snowfall 12s linear infinite;
+  animation-delay: -1s;
+}
+
+.snowflake:nth-child(19) {
+  --size: 0.8vw;
+  --left-ini: 2vw;
+  --left-end: -9vw;
+  left: 15vw;
+  animation: snowfall 11s linear infinite;
+  animation-delay: -3s;
+}
+
+.snowflake:nth-child(20) {
+  --size: 0.4vw;
+  --left-ini: -8vw;
+  --left-end: 1vw;
+  left: 67vw;
+  animation: snowfall 7s linear infinite;
+  animation-delay: -4s;
+}
+
+.snowflake:nth-child(21) {
+  --size: 1vw;
+  --left-ini: -4vw;
+  --left-end: 3vw;
+  left: 99vw;
+  animation: snowfall 11s linear infinite;
+  animation-delay: -4s;
+}
+
+.snowflake:nth-child(22) {
+  --size: 0.6vw;
+  --left-ini: 4vw;
+  --left-end: -5vw;
+  left: 56vw;
+  animation: snowfall 11s linear infinite;
+  animation-delay: -9s;
+}
+
+.snowflake:nth-child(23) {
+  --size: 0.4vw;
+  --left-ini: 1vw;
+  --left-end: 2vw;
+  left: 65vw;
+  animation: snowfall 12s linear infinite;
+  animation-delay: -4s;
+}
+
+.snowflake:nth-child(24) {
+  --size: 0.2vw;
+  --left-ini: -2vw;
+  --left-end: 5vw;
+  left: 5vw;
+  animation: snowfall 8s linear infinite;
+  animation-delay: -2s;
+}
+
+.snowflake:nth-child(25) {
+  --size: 0.6vw;
+  --left-ini: 10vw;
+  --left-end: 6vw;
+  left: 67vw;
+  animation: snowfall 10s linear infinite;
+  animation-delay: -7s;
+}
+
+.snowflake:nth-child(26) {
+  --size: 0.2vw;
+  --left-ini: -2vw;
+  --left-end: 10vw;
+  left: 90vw;
+  animation: snowfall 14s linear infinite;
+  animation-delay: -3s;
+}
+
+.snowflake:nth-child(27) {
+  --size: 0.2vw;
+  --left-ini: -2vw;
+  --left-end: -2vw;
+  left: 7vw;
+  animation: snowfall 11s linear infinite;
+  animation-delay: -4s;
+}
+
+.snowflake:nth-child(28) {
+  --size: 1vw;
+  --left-ini: 0vw;
+  --left-end: -2vw;
+  left: 65vw;
+  animation: snowfall 11s linear infinite;
+  animation-delay: -3s;
+}
+
+.snowflake:nth-child(29) {
+  --size: 0.2vw;
+  --left-ini: 10vw;
+  --left-end: 2vw;
+  left: 62vw;
+  animation: snowfall 15s linear infinite;
+  animation-delay: -4s;
+}
+
+.snowflake:nth-child(30) {
+  --size: 0.4vw;
+  --left-ini: 9vw;
+  --left-end: -8vw;
+  left: 87vw;
+  animation: snowfall 13s linear infinite;
+  animation-delay: -4s;
+}
+
+.snowflake:nth-child(31) {
+  --size: 0.4vw;
+  --left-ini: 0vw;
+  --left-end: 5vw;
+  left: 83vw;
+  animation: snowfall 15s linear infinite;
+  animation-delay: -6s;
+}
+
+.snowflake:nth-child(32) {
+  --size: 0.4vw;
+  --left-ini: 4vw;
+  --left-end: -8vw;
+  left: 27vw;
+  animation: snowfall 11s linear infinite;
+  animation-delay: -1s;
+}
+
+.snowflake:nth-child(33) {
+  --size: 0.8vw;
+  --left-ini: -7vw;
+  --left-end: -3vw;
+  left: 55vw;
+  animation: snowfall 15s linear infinite;
+  animation-delay: -9s;
+}
+
+.snowflake:nth-child(34) {
+  --size: 1vw;
+  --left-ini: -3vw;
+  --left-end: -5vw;
+  left: 20vw;
+  animation: snowfall 14s linear infinite;
+  animation-delay: -1s;
+}
+
+.snowflake:nth-child(35) {
+  --size: 0.4vw;
+  --left-ini: 2vw;
+  --left-end: -1vw;
+  left: 61vw;
+  animation: snowfall 10s linear infinite;
+  animation-delay: -3s;
+}
+
+.snowflake:nth-child(36) {
+  --size: 0.2vw;
+  --left-ini: -7vw;
+  --left-end: -6vw;
+  left: 23vw;
+  animation: snowfall 12s linear infinite;
+  animation-delay: -10s;
+}
+
+.snowflake:nth-child(37) {
+  --size: 0.2vw;
+  --left-ini: 6vw;
+  --left-end: 7vw;
+  left: 63vw;
+  animation: snowfall 9s linear infinite;
+  animation-delay: -8s;
+}
+
+.snowflake:nth-child(38) {
+  --size: 0.6vw;
+  --left-ini: -1vw;
+  --left-end: 8vw;
+  left: 63vw;
+  animation: snowfall 14s linear infinite;
+  animation-delay: -6s;
+}
+
+.snowflake:nth-child(39) {
+  --size: 0.8vw;
+  --left-ini: 6vw;
+  --left-end: -4vw;
+  left: 44vw;
+  animation: snowfall 15s linear infinite;
+  animation-delay: -10s;
+}
+
+.snowflake:nth-child(40) {
+  --size: 0.8vw;
+  --left-ini: 2vw;
+  --left-end: 3vw;
+  left: 44vw;
+  animation: snowfall 15s linear infinite;
+  animation-delay: -1s;
+}
+
+.snowflake:nth-child(41) {
+  --size: 0.6vw;
+  --left-ini: -3vw;
+  --left-end: -4vw;
+  left: 46vw;
+  animation: snowfall 7s linear infinite;
+  animation-delay: -8s;
+}
+
+.snowflake:nth-child(42) {
+  --size: 0.2vw;
+  --left-ini: -9vw;
+  --left-end: -6vw;
+  left: 95vw;
+  animation: snowfall 12s linear infinite;
+  animation-delay: -3s;
+}
+
+.snowflake:nth-child(43) {
+  --size: 0.8vw;
+  --left-ini: 3vw;
+  --left-end: 7vw;
+  left: 54vw;
+  animation: snowfall 11s linear infinite;
+  animation-delay: -10s;
+}
+
+.snowflake:nth-child(44) {
+  --size: 0.2vw;
+  --left-ini: 1vw;
+  --left-end: 9vw;
+  left: 97vw;
+  animation: snowfall 9s linear infinite;
+  animation-delay: -8s;
+}
+
+.snowflake:nth-child(45) {
+  --size: 0.2vw;
+  --left-ini: 7vw;
+  --left-end: 8vw;
+  left: 25vw;
+  animation: snowfall 10s linear infinite;
+  animation-delay: -7s;
+}
+
+.snowflake:nth-child(46) {
+  --size: 1vw;
+  --left-ini: 6vw;
+  --left-end: -6vw;
+  left: 70vw;
+  animation: snowfall 8s linear infinite;
+  animation-delay: -6s;
+}
+
+.snowflake:nth-child(47) {
+  --size: 0.8vw;
+  --left-ini: -3vw;
+  --left-end: -5vw;
+  left: 51vw;
+  animation: snowfall 9s linear infinite;
+  animation-delay: -8s;
+}
+
+.snowflake:nth-child(48) {
+  --size: 1vw;
+  --left-ini: 3vw;
+  --left-end: -8vw;
+  left: 50vw;
+  animation: snowfall 8s linear infinite;
+  animation-delay: -5s;
+}
+
+.snowflake:nth-child(49) {
+  --size: 0.6vw;
+  --left-ini: 2vw;
+  --left-end: 6vw;
+  left: 73vw;
+  animation: snowfall 7s linear infinite;
+  animation-delay: -3s;
+}
+
+.snowflake:nth-child(50) {
+  --size: 0.2vw;
+  --left-ini: -7vw;
+  --left-end: -8vw;
+  left: 18vw;
+  animation: snowfall 7s linear infinite;
+  animation-delay: -1s;
+}
+
+/* added small blur every 6 snowflakes*/
+.snowflake:nth-child(6n) {
+  filter: blur(1px);
+}
+
+.slide:nth-child(1) .custom-carousel-content {
+  background-image: url("../img/carouselNieve1.webp");
+}
+
+.slide:nth-child(2) .custom-carousel-content {
+  background-image: url("../img/carouselNieve2.jpg");
+}
+
+.slide:nth-child(3) .custom-carousel-content {
+  background-image: url("../img/carouselNieve3.jpg");
+}
+
+.slide:nth-child(4) .custom-carousel-content {
+  background-image: url("../img/carouselNieve4.jpg");
+}
+
+.slide:nth-child(5) .custom-carousel-content {
+  background-image: url("../img/carouselNieve5.jpg");
+}
+
+.slide:nth-child(6) .custom-carousel-content {
+  background-image: url("../img/carouselNieve6.jpeg");
+}
+
+.opciones-interes {
+  background-color: #162243 !important;
+}
+.opciones-interes div p {
+  color: #80bcff;
+}
+.opciones-interes div:hover p {
+  color: white;
+}
+
+.hotelTitle {
+  background-color: #80bcff !important;
+}
+.hotelTitle h1 {
+  color: #15163a;
+  font-family: "Playfair Display SC", serif !important;
+}
+
+.hotelTitle-fotos-section {
+  background-color: #162243 !important;
+}
+
+.habitacion-container:nth-child(1) {
+  background-image: url(../img/vacacionalNieve.webp) !important;
+}
+.habitacion-container:nth-child(2) {
+  background-image: url(../img/dobleNieve.webp) !important;
+}
+.habitacion-container:nth-child(3) {
+  background-image: url(../img/premiumNieve.jpeg) !important;
+}
+.habitacion-container:nth-child(4) {
+  background-image: url(../img/deluxeNieve.jpg) !important;
+}
+
+/*# sourceMappingURL=hotelNieve.css.map */

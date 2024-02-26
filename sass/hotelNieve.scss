@@ -1,0 +1,111 @@
+@import "style";
+@import "hotel";
+
+body {
+    background: url(../img/snowLandscape.jpeg) no-repeat fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.snowflake {
+    --size: 1vw;
+    width: var(--size);
+    height: var(--size);
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -5vh;
+}
+
+@keyframes snowfall {
+    0% {
+        transform: translate3d(var(--left-ini), 0, 0);
+    }
+
+    100% {
+        transform: translate3d(var(--left-end), 110vh, 0);
+    }
+}
+
+@for $i from 1 through 50 {
+    .snowflake:nth-child(#{$i}) {
+        --size: #{random(5) * 0.2}vw;
+        --left-ini: #{random(20) - 10}vw;
+        --left-end: #{random(20) - 10}vw;
+        left: #{random(100)}vw;
+        animation: snowfall #{5 + random(10)}s linear infinite;
+        animation-delay: -#{random(10)}s;
+    }
+}
+
+/* added small blur every 6 snowflakes*/
+.snowflake:nth-child(6n) {
+    filter: blur(1px);
+}
+
+
+$carouselPhotos : ('../img/carouselNieve1.webp',
+    '../img/carouselNieve2.jpg',
+    '../img/carouselNieve3.jpg',
+    '../img/carouselNieve4.jpg',
+    '../img/carouselNieve5.jpg',
+    '../img/carouselNieve6.jpeg',
+);
+
+@for $i from 1 through 6 {
+    $imagePath: nth($carouselPhotos, $i);
+
+    .slide:nth-child(#{$i}) .custom-carousel-content {
+        background-image: url($imagePath);
+    }
+}
+
+.opciones-interes {
+    background-color: #162243 !important;
+
+    div {
+
+        p {
+            color: #80bcff;
+        }
+
+        &:hover {
+
+            p {
+                color: white;
+            }
+        }
+    }
+}
+
+.hotelTitle {
+    background-color: #80bcff !important;
+
+    h1{
+        color: #15163a;
+        font-family: "Playfair Display SC", serif !important;
+    }
+}
+
+.hotelTitle-fotos-section {
+    background-color: #162243 !important;
+}
+
+.habitacion-container {
+
+    &:nth-child(1) {
+        background-image: url(../img/vacacionalNieve.webp) !important;
+    }
+
+    &:nth-child(2) {
+        background-image: url(../img/dobleNieve.webp) !important;
+    }
+
+    &:nth-child(3) {
+        background-image: url(../img/premiumNieve.jpeg) !important;
+    }
+
+    &:nth-child(4) {
+        background-image: url(../img/deluxeNieve.jpg) !important;
+    }
+}

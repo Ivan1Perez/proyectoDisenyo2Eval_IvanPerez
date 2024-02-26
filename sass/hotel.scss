@@ -31,7 +31,7 @@ header {
 
     .logo {
 
-        @include lg {
+        @include sm {
             margin-right: 2rem;
         }
     }
@@ -39,7 +39,10 @@ header {
 
 main {
     background-image: none;
-    margin: 0 2rem;
+
+    @include sm {
+        margin: 0 2rem;
+    }
 
     @include xl {
         margin: 0 6rem;
@@ -70,6 +73,10 @@ main {
             margin: auto;
             color: $letterColorHeroSection;
 
+            @include xl {
+                font-size: 1.2vw;
+            }
+
             @include sm {
                 display: flex;
             }
@@ -96,6 +103,10 @@ main {
                 @include customEnlace();
                 color: white;
                 background-color: #404040be;
+
+                @include xl {
+                    font-size: 1.2vw;
+                }
             }
         }
     }
@@ -185,6 +196,10 @@ main {
             display: flex;
         }
 
+        @include xl {
+            font-size: 1.3vw;
+        }
+
         div {
             @include flex-center();
             padding: 0.5rem;
@@ -216,9 +231,9 @@ main {
         overflow: hidden;
         position: relative;
 
-        [class*="imgAbsolute"]{
+        [class*="imgAbsolute"] {
             display: none;
-            
+
             @include md {
                 display: block;
             }
@@ -267,6 +282,10 @@ main {
 
             h1 {
                 text-align: center;
+
+                @include xl {
+                    font-size: 3.3vw;
+                }
             }
 
             img {
@@ -360,6 +379,12 @@ main {
         h2 {
             @include h2_titulo_section();
         }
+
+        p {
+            @include xl {
+                font-size: 1.4vw;
+            }
+        }
     }
 
     .mapa-experiencia-usuario-section {
@@ -392,9 +417,16 @@ main {
             h3 {
                 font-weight: bold;
                 font-size: 2rem;
+
+                @include xl {
+                    font-size: 2vw;
+                }
             }
 
             div {
+                @include xl {
+                    font-size: 1.4vw;
+                }
 
                 p {
                     font-size: 1.5rem;
@@ -435,6 +467,10 @@ main {
             h2 {
                 font-weight: bold;
                 margin-bottom: 2rem;
+
+                @include xl {
+                    font-size: 2.4vw;
+                }
             }
 
             .servicios-populares-container {
@@ -454,12 +490,105 @@ main {
                     align-items: center;
 
                     @include xl {
-                        flex-direction: unset;
                         justify-content: center;
                         gap: 1rem;
+                        font-size: 1.6vw;
+
+                        img {
+                            width: 2vw;
+                        }
                     }
                 }
             }
+        }
+    }
+}
+
+.habitaciones-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: white;
+
+    h2 {
+        @include h2_titulo_section();
+    }
+
+    .habitaciones-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+        @include sm {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include xl {
+            display: flex;
+            flex-direction: unset;
+        }
+
+        .habitacion-container {
+            background-size: cover;
+            width: 100%;
+            height: 250px;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 300ms;
+
+            &:hover {
+                transform: scale(1.2, 1.2);
+                box-shadow: 0 0 20px rgba(0, 0, 255, 0.5);
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                // width: 100%;
+                // height: 100%;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                transform-origin: center;
+                transform: scale(1);
+                transition: transform 300ms;
+            }
+            
+            @include lg {
+                height: 300px;
+            }
+
+            h4 {
+                text-align: center;
+                padding-top: 0.5rem;
+                font-size: 1.5rem;
+                font-weight: bold;
+
+                @include xl {
+                    font-size: 1.7vw;
+                }
+            }
+
+            &:nth-child(1) {
+                background-image: url(../img/basicaPlaya.jpeg);
+            }
+
+            &:nth-child(2) {
+                background-image: url(../img/doblePlaya.jpeg);
+            }
+
+            &:nth-child(3) {
+                background-image: url(../img/premiumPlaya.jpeg);
+            }
+
+            &:nth-child(4) {
+                background-image: url(../img/deluxe.jpeg);
+            }
+
         }
     }
 }
@@ -506,14 +635,6 @@ footer {
     width: 4000px;
     right: 0;
     top: -100px;
-}
-
-.logo {
-    width: 50px;
-    fill: white;
-    padding-right: 15px;
-    display: inline-block;
-    vertical-align: middle;
 }
 
 .inner-header {
