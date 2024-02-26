@@ -1640,6 +1640,11 @@ main .hotelTitle-fotos-section form button[type=submit] {
     margin-right: 0;
   }
 }
+@media (min-width: 1300px) {
+  main .hotelTitle-fotos-section form #checkIn_hotel, main .hotelTitle-fotos-section form #checkOut_hotel {
+    width: 20vw;
+  }
+}
 main .hotelTitle-fotos-section form input {
   border: 1px solid #adadad;
   position: relative;
@@ -1657,6 +1662,7 @@ main .hotelTitle-fotos-section form input {
   }
   main .hotelTitle-fotos-section button[type=submit] {
     grid-column: 1/4;
+    z-index: 3;
   }
 }
 main .hotelTitle-fotos-section #checkIn_hotel {

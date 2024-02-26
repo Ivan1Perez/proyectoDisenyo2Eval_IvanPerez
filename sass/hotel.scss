@@ -321,6 +321,13 @@ main {
                     }
                 }
 
+                @include custom_wd(1300) {
+
+                    #checkIn_hotel, #checkOut_hotel {
+                        width: 20vw;
+                    }
+                }
+
                 input {
                     border: 1px solid #adadad;
                     position: relative;
@@ -344,6 +351,7 @@ main {
 
                 button[type="submit"] {
                     grid-column: 1 / 4;
+                    z-index: 3;
                 }
             }
 

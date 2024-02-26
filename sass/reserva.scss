@@ -1,0 +1,314 @@
+@import "style";
+@import "hotel";
+
+body {
+    background-image: none;
+    background-color: #DDDDDD;
+}
+
+header {
+    background-color: #003b95;
+    align-items: center;
+
+    @include xl {
+        justify-content: space-between;
+    }
+
+    h1 {
+        font-family: "Playfair Display SC", serif;
+        font-weight: bold;
+        font-size: 5vw;
+        color: white;
+    }
+}
+
+@include form() {
+
+    form {
+        @include lg {
+            display: flex;
+            max-width: 950px;
+            margin: auto;
+
+            button[type="submit"] {
+                left: 0;
+                margin: auto;
+            }
+        }
+
+        @include xl {
+            max-width: unset;
+            padding: 1rem;
+            padding-bottom: 0;
+            margin: 0 3rem;
+
+            #checkIn_reserva {
+                margin: 1rem 0;
+            }
+
+            button[type="submit"] {
+                margin-right: 0;
+            }
+        }
+
+        @include custom_wd(1300) {
+
+            #checkIn_reserva,
+            #checkOut_reserva {
+                width: 20vw;
+            }
+
+            .dropdown {
+
+                button {
+                    font-size: 1.5vw;
+                }
+            }
+        }
+
+        input {
+            border: 1px solid #adadad;
+            position: relative;
+        }
+    }
+
+    @include md {
+
+        #checkIn_reserva,
+        #checkOut_reserva {
+            width: 200px;
+        }
+
+        .dropdown {
+            grid-column: 3 / 4 !important;
+
+            button {
+                border: 1px solid #adadad;
+            }
+        }
+
+
+        button[type="submit"] {
+            grid-column: 1 / 4;
+            z-index: 3;
+        }
+    }
+
+    #checkIn_reserva {
+        background-image: url(../img/calendar-up.png);
+    }
+
+    #checkOut_reserva {
+        background-image: url(../img/calendar-down.png);
+        background-repeat: no-repeat;
+        background-position: 0.5rem center;
+    }
+
+    .dropdown {
+
+        button {
+            padding: 0.5rem;
+            display: block;
+        }
+    }
+
+    button[type="submit"] {
+        background-color: #0071c2 !important;
+        color: white;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.img-reserva-section {
+    margin: 2rem 0;
+    padding: 0 2rem;
+    @include flex-center();
+    gap: 2rem;
+
+    div {
+        border-radius: 10px;
+        height: 304.5px;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+
+        &:nth-child(1) {
+            background-image: url(../img/carouselPlaya5.jpeg);
+        }
+
+        &:nth-child(2) {
+            display: none;
+
+            @include sm {
+                display: block;
+                background-image: url(../img/carouselPlaya3.png);
+            }
+        }
+
+        &:nth-child(3) {
+            display: none;
+
+            @include lg {
+                display: block;
+                background-image: url(../img/premiumPlaya.jpeg);
+            }
+        }
+    }
+}
+
+.tipos-habitacion-section {
+    background-color: white;
+    padding: 2rem;
+
+    @include lg {
+        display: none;
+    }
+
+    h3 {
+        background-color: #4c76b2;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        border-radius: 6px;
+        font-family: "Playfair Display SC", serif;
+    }
+
+    .tipos-habiation-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 2rem;
+
+        @include md {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        div {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            border: 1px solid #b7c6dd;
+            padding: 1rem;
+            background-color: #e1e2e3;
+            width: 100%;
+
+            h5 {
+                margin: auto;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+
+                .material-symbols-outlined {
+                    @include xl {
+                        font-size: 1.8vw !important;
+                    }
+
+                    font-variation-settings: 'FILL' 0,
+                    'wght' 400,
+                    'GRAD' 0,
+                    'opsz' 24
+                }
+            }
+        }
+    }
+}
+
+.tipos-habitacion-section-table {
+    display: none;
+    background-color: white;
+
+    @include lg {
+        display: block;
+        padding: 2rem;
+    }
+
+    table {
+        width: 100%;
+        margin: auto;
+
+        tr {
+            margin: auto;
+            border-spacing: 2;
+            border: 2px solid #57a6f4;
+        }
+
+        tr:nth-child(4),
+        tr:nth-child(5) {
+
+            h5 {
+                display: flex;
+                gap: 0.5rem;
+            }
+        }
+
+        th,
+        td {
+            padding: 1rem;
+        }
+
+        th {
+            background-color: #4c76b2;
+            color: white;
+            border: 2px solid white;
+            border-bottom-color: #57a6f4;
+
+            &:first-child {
+                border-left-color: #57a6f4;
+            }
+
+            &:last-child {
+                border-right-color: #57a6f4;
+            }
+
+            @include xl {
+                font-size: 1.6vw;
+            }
+        }
+
+        td {
+            border: 2px solid #57a6f4;
+            background-color: white;
+
+            @include xl {
+                font-size: 1.2vw;
+            }
+
+            h5 {
+                @include xl {
+                    font-size: 1.4vw;
+                }
+            }
+        }
+
+        .td-habitacion {
+            background-color: white;
+            color: #212529;
+            border: none;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+.reservar-container {
+    background-color: white;
+    padding: 1rem;
+    font-family: "Playfair Display SC", serif;
+    font-size: 2rem;
+
+    button {
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        margin: auto;
+        display: block;
+        border: none;
+        background-color: #0071c2 !important;
+        color: white;
+        margin-bottom: 1.5rem;
+    }
+}

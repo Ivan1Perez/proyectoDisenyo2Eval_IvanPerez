@@ -2809,6 +2809,7 @@ main .hotelTitle-fotos-section form input {
   }
   main .hotelTitle-fotos-section button[type=submit] {
     grid-column: 1/4;
+    z-index: 3;
   }
 }
 main .hotelTitle-fotos-section #checkIn_hotel {
@@ -3195,541 +3196,459 @@ footer div .footer-info-links-container .direccion-contacto {
   }
 }
 body {
-  background: url(../img/snowLandscape.jpeg) no-repeat fixed;
-  background-size: 100%;
-  background-repeat: no-repeat;
+  background-image: none;
+  background-color: #DDDDDD;
 }
 
-.snowflake {
-  --size: 1vw;
-  width: var(--size);
-  height: var(--size);
-  background: white;
-  border-radius: 50%;
-  position: absolute;
-  top: -5vh;
+header {
+  background-color: #003b95;
+  align-items: center;
 }
-
-@keyframes snowfall {
-  0% {
-    transform: translate3d(var(--left-ini), 0, 0);
-  }
-  100% {
-    transform: translate3d(var(--left-end), 110vh, 0);
+@media (min-width: 1200px) {
+  header {
+    justify-content: space-between;
   }
 }
-.snowflake:nth-child(1) {
-  --size: 1vw;
-  --left-ini: -6vw;
-  --left-end: 1vw;
-  left: 48vw;
-  animation: snowfall 13s linear infinite;
-  animation-delay: -9s;
-}
-
-.snowflake:nth-child(2) {
-  --size: 1vw;
-  --left-ini: 8vw;
-  --left-end: -7vw;
-  left: 32vw;
-  animation: snowfall 12s linear infinite;
-  animation-delay: -1s;
-}
-
-.snowflake:nth-child(3) {
-  --size: 0.8vw;
-  --left-ini: -4vw;
-  --left-end: -2vw;
-  left: 16vw;
-  animation: snowfall 9s linear infinite;
-  animation-delay: -10s;
-}
-
-.snowflake:nth-child(4) {
-  --size: 0.6vw;
-  --left-ini: -4vw;
-  --left-end: 2vw;
-  left: 9vw;
-  animation: snowfall 9s linear infinite;
-  animation-delay: -7s;
-}
-
-.snowflake:nth-child(5) {
-  --size: 0.2vw;
-  --left-ini: -7vw;
-  --left-end: 10vw;
-  left: 13vw;
-  animation: snowfall 14s linear infinite;
-  animation-delay: -1s;
-}
-
-.snowflake:nth-child(6) {
-  --size: 0.4vw;
-  --left-ini: 3vw;
-  --left-end: 4vw;
-  left: 43vw;
-  animation: snowfall 8s linear infinite;
-  animation-delay: -2s;
-}
-
-.snowflake:nth-child(7) {
-  --size: 0.8vw;
-  --left-ini: 4vw;
-  --left-end: 4vw;
-  left: 96vw;
-  animation: snowfall 13s linear infinite;
-  animation-delay: -7s;
-}
-
-.snowflake:nth-child(8) {
-  --size: 0.2vw;
-  --left-ini: -8vw;
-  --left-end: 0vw;
-  left: 1vw;
-  animation: snowfall 11s linear infinite;
-  animation-delay: -6s;
-}
-
-.snowflake:nth-child(9) {
-  --size: 1vw;
-  --left-ini: -8vw;
-  --left-end: -5vw;
-  left: 66vw;
-  animation: snowfall 7s linear infinite;
-  animation-delay: -1s;
-}
-
-.snowflake:nth-child(10) {
-  --size: 1vw;
-  --left-ini: 8vw;
-  --left-end: -2vw;
-  left: 45vw;
-  animation: snowfall 14s linear infinite;
-  animation-delay: -8s;
-}
-
-.snowflake:nth-child(11) {
-  --size: 0.4vw;
-  --left-ini: -5vw;
-  --left-end: -6vw;
-  left: 100vw;
-  animation: snowfall 9s linear infinite;
-  animation-delay: -5s;
-}
-
-.snowflake:nth-child(12) {
-  --size: 1vw;
-  --left-ini: 5vw;
-  --left-end: 8vw;
-  left: 18vw;
-  animation: snowfall 13s linear infinite;
-  animation-delay: -2s;
-}
-
-.snowflake:nth-child(13) {
-  --size: 0.6vw;
-  --left-ini: -7vw;
-  --left-end: -9vw;
-  left: 48vw;
-  animation: snowfall 14s linear infinite;
-  animation-delay: -10s;
-}
-
-.snowflake:nth-child(14) {
-  --size: 0.8vw;
-  --left-ini: 10vw;
-  --left-end: -8vw;
-  left: 7vw;
-  animation: snowfall 9s linear infinite;
-  animation-delay: -8s;
-}
-
-.snowflake:nth-child(15) {
-  --size: 0.4vw;
-  --left-ini: -8vw;
-  --left-end: 1vw;
-  left: 46vw;
-  animation: snowfall 8s linear infinite;
-  animation-delay: -7s;
-}
-
-.snowflake:nth-child(16) {
-  --size: 0.2vw;
-  --left-ini: 8vw;
-  --left-end: 7vw;
-  left: 46vw;
-  animation: snowfall 14s linear infinite;
-  animation-delay: -4s;
-}
-
-.snowflake:nth-child(17) {
-  --size: 0.2vw;
-  --left-ini: 1vw;
-  --left-end: 2vw;
-  left: 28vw;
-  animation: snowfall 11s linear infinite;
-  animation-delay: -7s;
-}
-
-.snowflake:nth-child(18) {
-  --size: 0.6vw;
-  --left-ini: 1vw;
-  --left-end: -9vw;
-  left: 16vw;
-  animation: snowfall 10s linear infinite;
-  animation-delay: -8s;
-}
-
-.snowflake:nth-child(19) {
-  --size: 0.8vw;
-  --left-ini: -6vw;
-  --left-end: 0vw;
-  left: 72vw;
-  animation: snowfall 14s linear infinite;
-  animation-delay: -1s;
-}
-
-.snowflake:nth-child(20) {
-  --size: 1vw;
-  --left-ini: 3vw;
-  --left-end: -9vw;
-  left: 51vw;
-  animation: snowfall 8s linear infinite;
-  animation-delay: -8s;
-}
-
-.snowflake:nth-child(21) {
-  --size: 0.8vw;
-  --left-ini: -9vw;
-  --left-end: -7vw;
-  left: 55vw;
-  animation: snowfall 7s linear infinite;
-  animation-delay: -2s;
-}
-
-.snowflake:nth-child(22) {
-  --size: 0.6vw;
-  --left-ini: -5vw;
-  --left-end: -3vw;
-  left: 11vw;
-  animation: snowfall 12s linear infinite;
-  animation-delay: -7s;
-}
-
-.snowflake:nth-child(23) {
-  --size: 0.4vw;
-  --left-ini: 4vw;
-  --left-end: 5vw;
-  left: 72vw;
-  animation: snowfall 13s linear infinite;
-  animation-delay: -4s;
-}
-
-.snowflake:nth-child(24) {
-  --size: 0.2vw;
-  --left-ini: 9vw;
-  --left-end: 5vw;
-  left: 84vw;
-  animation: snowfall 13s linear infinite;
-  animation-delay: -4s;
-}
-
-.snowflake:nth-child(25) {
-  --size: 0.2vw;
-  --left-ini: 9vw;
-  --left-end: 1vw;
-  left: 41vw;
-  animation: snowfall 6s linear infinite;
-  animation-delay: -1s;
-}
-
-.snowflake:nth-child(26) {
-  --size: 0.8vw;
-  --left-ini: 3vw;
-  --left-end: 1vw;
-  left: 98vw;
-  animation: snowfall 11s linear infinite;
-  animation-delay: -5s;
-}
-
-.snowflake:nth-child(27) {
-  --size: 0.6vw;
-  --left-ini: 7vw;
-  --left-end: 10vw;
-  left: 73vw;
-  animation: snowfall 6s linear infinite;
-  animation-delay: -4s;
-}
-
-.snowflake:nth-child(28) {
-  --size: 1vw;
-  --left-ini: 5vw;
-  --left-end: 9vw;
-  left: 83vw;
-  animation: snowfall 8s linear infinite;
-  animation-delay: -8s;
-}
-
-.snowflake:nth-child(29) {
-  --size: 0.8vw;
-  --left-ini: -5vw;
-  --left-end: -2vw;
-  left: 81vw;
-  animation: snowfall 15s linear infinite;
-  animation-delay: -2s;
-}
-
-.snowflake:nth-child(30) {
-  --size: 0.6vw;
-  --left-ini: -5vw;
-  --left-end: -2vw;
-  left: 97vw;
-  animation: snowfall 6s linear infinite;
-  animation-delay: -5s;
-}
-
-.snowflake:nth-child(31) {
-  --size: 0.6vw;
-  --left-ini: -6vw;
-  --left-end: 6vw;
-  left: 56vw;
-  animation: snowfall 8s linear infinite;
-  animation-delay: -8s;
-}
-
-.snowflake:nth-child(32) {
-  --size: 1vw;
-  --left-ini: 8vw;
-  --left-end: 8vw;
-  left: 21vw;
-  animation: snowfall 12s linear infinite;
-  animation-delay: -9s;
-}
-
-.snowflake:nth-child(33) {
-  --size: 0.2vw;
-  --left-ini: -8vw;
-  --left-end: 8vw;
-  left: 94vw;
-  animation: snowfall 13s linear infinite;
-  animation-delay: -2s;
-}
-
-.snowflake:nth-child(34) {
-  --size: 1vw;
-  --left-ini: 6vw;
-  --left-end: -5vw;
-  left: 53vw;
-  animation: snowfall 12s linear infinite;
-  animation-delay: -8s;
-}
-
-.snowflake:nth-child(35) {
-  --size: 0.6vw;
-  --left-ini: -6vw;
-  --left-end: -2vw;
-  left: 71vw;
-  animation: snowfall 11s linear infinite;
-  animation-delay: -4s;
-}
-
-.snowflake:nth-child(36) {
-  --size: 0.8vw;
-  --left-ini: 3vw;
-  --left-end: -3vw;
-  left: 96vw;
-  animation: snowfall 9s linear infinite;
-  animation-delay: -7s;
-}
-
-.snowflake:nth-child(37) {
-  --size: 0.8vw;
-  --left-ini: 0vw;
-  --left-end: 0vw;
-  left: 41vw;
-  animation: snowfall 6s linear infinite;
-  animation-delay: -7s;
-}
-
-.snowflake:nth-child(38) {
-  --size: 0.8vw;
-  --left-ini: 8vw;
-  --left-end: -7vw;
-  left: 81vw;
-  animation: snowfall 8s linear infinite;
-  animation-delay: -8s;
-}
-
-.snowflake:nth-child(39) {
-  --size: 0.4vw;
-  --left-ini: -7vw;
-  --left-end: -3vw;
-  left: 33vw;
-  animation: snowfall 10s linear infinite;
-  animation-delay: -5s;
-}
-
-.snowflake:nth-child(40) {
-  --size: 0.8vw;
-  --left-ini: -5vw;
-  --left-end: -3vw;
-  left: 79vw;
-  animation: snowfall 9s linear infinite;
-  animation-delay: -1s;
-}
-
-.snowflake:nth-child(41) {
-  --size: 1vw;
-  --left-ini: -5vw;
-  --left-end: 7vw;
-  left: 27vw;
-  animation: snowfall 9s linear infinite;
-  animation-delay: -3s;
-}
-
-.snowflake:nth-child(42) {
-  --size: 1vw;
-  --left-ini: -7vw;
-  --left-end: -3vw;
-  left: 15vw;
-  animation: snowfall 6s linear infinite;
-  animation-delay: -4s;
-}
-
-.snowflake:nth-child(43) {
-  --size: 0.8vw;
-  --left-ini: -5vw;
-  --left-end: -6vw;
-  left: 58vw;
-  animation: snowfall 11s linear infinite;
-  animation-delay: -3s;
-}
-
-.snowflake:nth-child(44) {
-  --size: 0.2vw;
-  --left-ini: 6vw;
-  --left-end: 6vw;
-  left: 16vw;
-  animation: snowfall 13s linear infinite;
-  animation-delay: -8s;
-}
-
-.snowflake:nth-child(45) {
-  --size: 0.8vw;
-  --left-ini: 8vw;
-  --left-end: 3vw;
-  left: 92vw;
-  animation: snowfall 7s linear infinite;
-  animation-delay: -10s;
-}
-
-.snowflake:nth-child(46) {
-  --size: 1vw;
-  --left-ini: 4vw;
-  --left-end: -9vw;
-  left: 39vw;
-  animation: snowfall 15s linear infinite;
-  animation-delay: -8s;
-}
-
-.snowflake:nth-child(47) {
-  --size: 0.4vw;
-  --left-ini: -7vw;
-  --left-end: 2vw;
-  left: 7vw;
-  animation: snowfall 15s linear infinite;
-  animation-delay: -5s;
-}
-
-.snowflake:nth-child(48) {
-  --size: 0.6vw;
-  --left-ini: -3vw;
-  --left-end: 4vw;
-  left: 75vw;
-  animation: snowfall 8s linear infinite;
-  animation-delay: -7s;
-}
-
-.snowflake:nth-child(49) {
-  --size: 1vw;
-  --left-ini: 8vw;
-  --left-end: -6vw;
-  left: 74vw;
-  animation: snowfall 11s linear infinite;
-  animation-delay: -10s;
-}
-
-.snowflake:nth-child(50) {
-  --size: 0.4vw;
-  --left-ini: 9vw;
-  --left-end: 10vw;
-  left: 33vw;
-  animation: snowfall 9s linear infinite;
-  animation-delay: -2s;
-}
-
-/* added small blur every 6 snowflakes*/
-.snowflake:nth-child(6n) {
-  filter: blur(1px);
-}
-
-.slide:nth-child(1) .custom-carousel-content {
-  background-image: url("../img/carouselNieve1.webp");
-}
-
-.slide:nth-child(2) .custom-carousel-content {
-  background-image: url("../img/carouselNieve2.jpg");
-}
-
-.slide:nth-child(3) .custom-carousel-content {
-  background-image: url("../img/carouselNieve3.jpg");
-}
-
-.slide:nth-child(4) .custom-carousel-content {
-  background-image: url("../img/carouselNieve4.jpg");
-}
-
-.slide:nth-child(5) .custom-carousel-content {
-  background-image: url("../img/carouselNieve5.jpg");
-}
-
-.slide:nth-child(6) .custom-carousel-content {
-  background-image: url("../img/carouselNieve6.jpeg");
-}
-
-.opciones-interes {
-  background-color: #162243 !important;
-}
-.opciones-interes div p {
-  color: #80bcff;
-}
-.opciones-interes div:hover p {
+header h1 {
+  font-family: "Playfair Display SC", serif;
+  font-weight: bold;
+  font-size: 5vw;
   color: white;
 }
 
-.hotelTitle {
-  background-color: #80bcff !important;
+form {
+  padding-top: 0.5rem;
+  font-family: "Outfit", sans-serif;
 }
-.hotelTitle h1 {
-  color: #15163a;
-  font-family: "Playfair Display SC", serif !important;
+@media (min-width: 768px) {
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media (min-width: 992px) {
+  form {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  form {
+    display: flex;
+    font-size: 1.4vw;
+  }
+  form #checkIn,
+  form #checkOut {
+    width: 12vw;
+  }
+}
+form input,
+form select {
+  border: none;
+  padding: 0.5rem;
+  padding-left: 2.5rem;
+  border-radius: 6px;
+  margin: 1rem auto;
+  display: block;
+  color: #444444;
+  background-color: white;
+}
+@media (min-width: 576px) {
+  form input,
+  form select {
+    width: 320px;
+  }
+}
+@media (min-width: 1200px) {
+  form input,
+  form select {
+    background-size: 2vw;
+    padding-left: 3vw;
+  }
+}
+form input::placeholder,
+form select::placeholder {
+  color: #909090;
+}
+form input:first-child {
+  background-image: url("../img/building-community.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 0.5rem;
+}
+@media (min-width: 768px) {
+  form input:first-child {
+    width: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  form input:first-child {
+    width: 28vw;
+  }
+}
+form #checkIn {
+  background-image: url("../img/calendar-up.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 0.5rem;
+}
+form #checkOut {
+  background-image: url("../img/calendar-down.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 0.5rem;
+}
+@media (min-width: 768px) {
+  form .flatpickr-input {
+    width: fit-content;
+    width: -moz-fit-content;
+  }
+}
+@media (min-width: 768px) {
+  form .dropdown {
+    grid-column: 2/3;
+  }
+}
+@media (min-width: 992px) {
+  form .dropdown {
+    grid-column: unset;
+  }
+}
+form .customDropdown {
+  width: fit-content;
+  background-color: white;
+  margin: 1rem auto;
+}
+form .customDropdown:focus {
+  color: black;
+}
+form .customDropdown:not(:active) {
+  color: black;
+}
+form .customDropdown-menu li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  user-select: none;
+}
+@media (min-width: 1200px) {
+  form .customDropdown-menu li {
+    font-size: 1.5vw;
+    gap: 2vw;
+  }
+}
+form .customDropdown-menu li p {
+  margin: 0;
+}
+form .customDropdown-menu li div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 91px;
+  min-width: 91px;
+  gap: 0.5rem;
+  border: 1px solid gray;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+}
+form .customDropdown-menu li div label:first-child,
+form .customDropdown-menu li div label:last-child {
+  cursor: pointer;
+}
+form .customDropdown-menu li div label:nth-child(2) {
+  text-align: center;
+  min-width: 27px;
+}
+form .customDropdown-menu li:nth-child(2) label:first-child, form .customDropdown-menu li:last-child label:first-child {
+  cursor: not-allowed;
+  color: #bdbdbd;
+}
+form button {
+  border-radius: 6px;
+  color: black;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: auto;
+  display: block;
+}
+@media (min-width: 1200px) {
+  form button {
+    font-size: 1.4vw;
+  }
+}
+form button[type=submit] {
+  font-weight: 600;
+  background-color: #C49C74;
+}
+@media (min-width: 992px) {
+  form button[type=submit] {
+    grid-column: 2/4;
+    position: relative;
+    left: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  form button[type=submit] {
+    left: unset;
+  }
 }
 
-.hotelTitle-fotos-section {
-  background-color: #162243 !important;
+@media (min-width: 992px) {
+  form {
+    display: flex;
+    max-width: 950px;
+    margin: auto;
+  }
+  form button[type=submit] {
+    left: 0;
+    margin: auto;
+  }
+}
+@media (min-width: 1200px) {
+  form {
+    max-width: unset;
+    padding: 1rem;
+    padding-bottom: 0;
+    margin: 0 3rem;
+  }
+  form #checkIn_reserva {
+    margin: 1rem 0;
+  }
+  form button[type=submit] {
+    margin-right: 0;
+  }
+}
+@media (min-width: 1300px) {
+  form #checkIn_reserva,
+  form #checkOut_reserva {
+    width: 20vw;
+  }
+  form .dropdown button {
+    font-size: 1.5vw;
+  }
+}
+form input {
+  border: 1px solid #adadad;
+  position: relative;
 }
 
-.habitacion-container:nth-child(1) {
-  background-image: url(../img/vacacionalNieve.webp) !important;
+@media (min-width: 768px) {
+  #checkIn_reserva,
+  #checkOut_reserva {
+    width: 200px;
+  }
+  .dropdown {
+    grid-column: 3/4 !important;
+  }
+  .dropdown button {
+    border: 1px solid #adadad;
+  }
+  button[type=submit] {
+    grid-column: 1/4;
+    z-index: 3;
+  }
 }
-.habitacion-container:nth-child(2) {
-  background-image: url(../img/dobleNieve.webp) !important;
-}
-.habitacion-container:nth-child(3) {
-  background-image: url(../img/premiumNieve.jpeg) !important;
-}
-.habitacion-container:nth-child(4) {
-  background-image: url(../img/deluxeNieve.jpg) !important;
+#checkIn_reserva {
+  background-image: url(../img/calendar-up.png);
 }
 
-/*# sourceMappingURL=hotelNieve.css.map */
+#checkOut_reserva {
+  background-image: url(../img/calendar-down.png);
+  background-repeat: no-repeat;
+  background-position: 0.5rem center;
+}
+
+.dropdown button {
+  padding: 0.5rem;
+  display: block;
+}
+
+button[type=submit] {
+  background-color: #0071c2 !important;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.img-reserva-section {
+  margin: 2rem 0;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.img-reserva-section div {
+  border-radius: 10px;
+  height: 304.5px;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+}
+.img-reserva-section div:nth-child(1) {
+  background-image: url(../img/carouselPlaya5.jpeg);
+}
+.img-reserva-section div:nth-child(2) {
+  display: none;
+}
+@media (min-width: 576px) {
+  .img-reserva-section div:nth-child(2) {
+    display: block;
+    background-image: url(../img/carouselPlaya3.png);
+  }
+}
+.img-reserva-section div:nth-child(3) {
+  display: none;
+}
+@media (min-width: 992px) {
+  .img-reserva-section div:nth-child(3) {
+    display: block;
+    background-image: url(../img/premiumPlaya.jpeg);
+  }
+}
+
+.tipos-habitacion-section {
+  background-color: white;
+  padding: 2rem;
+}
+@media (min-width: 992px) {
+  .tipos-habitacion-section {
+    display: none;
+  }
+}
+.tipos-habitacion-section h3 {
+  background-color: #4c76b2;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 6px;
+  font-family: "Playfair Display SC", serif;
+}
+.tipos-habitacion-section .tipos-habiation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+@media (min-width: 768px) {
+  .tipos-habitacion-section .tipos-habiation-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.tipos-habitacion-section .tipos-habiation-container div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 1px solid #b7c6dd;
+  padding: 1rem;
+  background-color: #e1e2e3;
+  width: 100%;
+}
+.tipos-habitacion-section .tipos-habiation-container div h5 {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.tipos-habitacion-section .tipos-habiation-container div h5 .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+@media (min-width: 1200px) {
+  .tipos-habitacion-section .tipos-habiation-container div h5 .material-symbols-outlined {
+    font-size: 1.8vw !important;
+  }
+}
+
+.tipos-habitacion-section-table {
+  display: none;
+  background-color: white;
+}
+@media (min-width: 992px) {
+  .tipos-habitacion-section-table {
+    display: block;
+    padding: 2rem;
+  }
+}
+.tipos-habitacion-section-table table {
+  width: 100%;
+  margin: auto;
+}
+.tipos-habitacion-section-table table tr {
+  margin: auto;
+  border-spacing: 2;
+  border: 2px solid #57a6f4;
+}
+.tipos-habitacion-section-table table tr:nth-child(4) h5,
+.tipos-habitacion-section-table table tr:nth-child(5) h5 {
+  display: flex;
+  gap: 0.5rem;
+}
+.tipos-habitacion-section-table table th,
+.tipos-habitacion-section-table table td {
+  padding: 1rem;
+}
+.tipos-habitacion-section-table table th {
+  background-color: #4c76b2;
+  color: white;
+  border: 2px solid white;
+  border-bottom-color: #57a6f4;
+}
+.tipos-habitacion-section-table table th:first-child {
+  border-left-color: #57a6f4;
+}
+.tipos-habitacion-section-table table th:last-child {
+  border-right-color: #57a6f4;
+}
+@media (min-width: 1200px) {
+  .tipos-habitacion-section-table table th {
+    font-size: 1.6vw;
+  }
+}
+.tipos-habitacion-section-table table td {
+  border: 2px solid #57a6f4;
+  background-color: white;
+}
+@media (min-width: 1200px) {
+  .tipos-habitacion-section-table table td {
+    font-size: 1.2vw;
+  }
+}
+@media (min-width: 1200px) {
+  .tipos-habitacion-section-table table td h5 {
+    font-size: 1.4vw;
+  }
+}
+.tipos-habitacion-section-table table .td-habitacion {
+  background-color: white;
+  color: #212529;
+  border: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reservar-container {
+  background-color: white;
+  padding: 1rem;
+  font-family: "Playfair Display SC", serif;
+  font-size: 2rem;
+}
+.reservar-container button {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  margin: auto;
+  display: block;
+  border: none;
+  background-color: #0071c2 !important;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+/*# sourceMappingURL=reserva.css.map */
